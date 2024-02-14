@@ -11,7 +11,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1%;
-    background-color: violet;
+    background-color: rgb(199, 199, 240);
     color: black;
 }
   
@@ -38,6 +38,6 @@ footer {
     display: flex;
     justify-content: center;
     padding: 2%;
-    background-color: violet;
+    background-color: rgb(199, 199, 240);
     color: black;
   }
