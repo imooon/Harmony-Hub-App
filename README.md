@@ -11,4 +11,7 @@ A feel good/wellness website!
 
 - To access this webpage...
 
+# Licence
+- 
+
 # Credits
