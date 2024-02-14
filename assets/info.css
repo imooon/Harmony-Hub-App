@@ -24,6 +24,8 @@ nav ul {
     justify-content: space-between;
     min-width: 300px;
     list-style-type: none;
+    padding: 10px;
+    margin: 10px;
 }
 
 nav a {
@@ -31,3 +33,11 @@ nav a {
     font-weight: bold;
     text-decoration: none;
 }
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    background-color: violet;
+    color: black;
+  }

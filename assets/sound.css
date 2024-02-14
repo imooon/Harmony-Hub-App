@@ -10,7 +10,7 @@ header {
     display: flex;
     justify-content: space-between; 
     align-items: center;
-    padding: 0;
+    padding: 1%;
 }
   
 h1 {
@@ -22,6 +22,8 @@ nav ul {
     justify-content: space-between;
     min-width: 300px;
     list-style-type: none;
+    padding: 10px;
+    margin: 10px;
 }
 
 nav a {
@@ -29,3 +31,9 @@ nav a {
     font-weight: bold;
     text-decoration: none;
 }
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+  }

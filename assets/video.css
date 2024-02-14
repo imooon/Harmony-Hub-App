@@ -32,3 +32,9 @@ nav a {
     font-weight: bold; 
     text-decoration: none;
 }
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+  }
