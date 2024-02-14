@@ -15,6 +15,7 @@ A feel good/wellness website!
 
 - No authentications are needed to access the website.
 
+- Once on the website ... 
 
 # Credits
 
@@ -25,3 +26,19 @@ Request-Response: The Full-Stack Blog. (2023, November, 14). Professional Readme
 University of Toronto. (2023). Coding Boot Camp [Source Code].
 
 W3Schools. (n.d.). HTML Background Images. https://www.w3schools.com/html/html_images_background.asp
+
+
+
+
+
+YouTube API Key:
+
+AIzaSyDD6KMC2KaoZ9TdnRvR6t5v9062USQ-_kw
+
+Ted Talk Channel ID:
+
+UCAuUUnT6oDeKwE6v1NGQxug
+
+Uploads ID: 
+
+"UUAuUUnT6oDeKwE6v1NGQxug"
