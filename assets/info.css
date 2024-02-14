@@ -39,10 +39,15 @@ nav a {
 }
 
 footer {
-    display: flex;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex; 
     justify-content: center;
-    padding: 2%;
+    padding: 1%;
     background-color: rgb(246, 209, 96);
     color: black;
     font-weight: bold;
+    border-bottom:0;
   }
