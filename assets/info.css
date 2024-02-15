@@ -42,6 +42,20 @@ nav a {
     text-decoration: none;
 }
 
+section {
+    flex: 1 1 0;
+    padding-right: 5%;
+} 
+
+h2 {
+  padding-top: 10%;
+}
+
+p {
+  margin: 2% 0;
+  font-size: 110%;
+}
+
 footer {
     position: fixed;
     left: 0;
@@ -54,4 +68,20 @@ footer {
     color: black;
     font-weight: bold;
     border-bottom:0;
-  }
+}
+
+@media screen and (max-width: 768px) {
+    header,
+    main {
+      flex-direction: column;
+    }
+  
+    section {
+      padding-right: 0;
+    }
+  
+    /* aside {
+      width: 100%;
+      text-align: center;
+    } */
+}
