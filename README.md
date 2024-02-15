@@ -1,7 +1,5 @@
-# group-project-1
-Repository for Project 1
-
-A feel good/wellness website!
+# Harmony-hub
+Harmoney Hub - A feel good wellness application!
 
 # Description
 - The motivation for this project was to create a website where users can access a variety of tools to aid in feeling good and support wellness in their life. 
@@ -31,14 +29,3 @@ W3Schools. (n.d.). HTML Background Images. https://www.w3schools.com/html/html_i
 
 
 
-YouTube API Key:
-
-AIzaSyDD6KMC2KaoZ9TdnRvR6t5v9062USQ-_kw
-
-Ted Talk Channel ID:
-
-UCAuUUnT6oDeKwE6v1NGQxug
-
-Uploads ID: 
-
-"UUAuUUnT6oDeKwE6v1NGQxug"
