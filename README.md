@@ -1,5 +1,5 @@
 # group-project-1
-Repository for Project 1
+Harmoney Hub
 
 A feel good/wellness website!
 
