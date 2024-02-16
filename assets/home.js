@@ -1,10 +1,10 @@
 
 var quizTxt = [
     
-  {quote:"It doesn't depend where you go, it depends on the impression you left when leaving"},
- { quote: "This is tough but you are tougher"},
- {quote:"Don't be around negative energy"},
- {quote: "We cant learn to fly without crashing a few times"},
+  {quote:"It doesn't depend where you go, it depends on the impression you left when leaving❤️"},
+ { quote: "This is tough but you are tougher❤️"},
+ {quote:"Don't be around negative energy❤️"},
+ {quote: "We cant learn to fly without crashing a few times❤️"},
 
 ];
 

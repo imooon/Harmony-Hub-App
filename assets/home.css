@@ -12,7 +12,7 @@ h3{
 
 body{
     background-color:bisque;
-    background-image:url("./balance-110850_1280.jpg");
+    background-image:url("/images/balance-110850_1280.jpg");
     background-size:cover;
 }
 
@@ -22,8 +22,7 @@ body{
     text-align:center;
   margin-top:10%;
   color:white;
-  transform:scale(1.2);
-  
+
 }
 
 #exploreBtn{
