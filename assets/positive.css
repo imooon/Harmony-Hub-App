@@ -35,11 +35,17 @@ nav ul {
     list-style-type: none;
     padding: 10px;
     margin: 10px;
+    color:black;
 }
 
 nav a {
     font-weight: bold; 
     text-decoration: none;
+}
+/* 20px of spacing between list items */
+nav li {
+    margin-right: 20px;
+    color: black;
 }
 
 main {

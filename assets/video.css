@@ -9,7 +9,8 @@ body {
     font-family: 'Caveat', 'Roboto';
     font-size: 22px;
 }
-  
+
+/* Header styling */
 header {
     position: fixed;
     left: 0;
@@ -41,6 +42,11 @@ nav a {
     color: black;
     font-weight: bold; 
     text-decoration: none;
+}
+
+/* 20px of spacing between list items */
+nav li {
+    margin-right: 20px;
 }
 
 main {

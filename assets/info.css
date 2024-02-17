@@ -34,7 +34,6 @@ nav ul {
     list-style-type: none;
     padding: 10px;
     margin: 10px;
-    /* word-spacing: 1em; */
 }
 
 nav a {
@@ -43,10 +42,16 @@ nav a {
     text-decoration: none;
 }
 
+/* 20px of spacing between list items */
+nav li {
+    margin-right: 20px;
+}
+
 main {
     display: flex;
     flex-wrap: wrap; 
     padding: 10%;
+    color: black;
 }
 
 section {
@@ -64,6 +69,7 @@ h2 {
 p {
   margin: 2% 0;
   font-size: 110%;
+  color: black;
 }
 
 footer {
