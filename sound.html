@@ -15,6 +15,7 @@
         <h1>Harmony Hub</h1>
         <nav>
           <ul>
+            <!--removed the path(./) from links-->
             <li><a href="main.html">Main</a></li>
             <li><a href="quiz.html">Quiz</a></li>
             <li><a href="sound.html"></a> Sounds</a></li>
@@ -25,19 +26,48 @@
           </ul>
         </nav>
       </header>
+
+      <!--This displays the play list for users to pick and search from-->
+      <div class="playList">
+<h1>Choose Your Medicine</h1>
+<!--Below is the drop down options -->
+<label for="selectOptions">Pick A Sound:</label>
+<select id="selectOptions">
+  <option value=""></option>
+  <option value="meditation">Meditation</option>
+  <option value="fireSound">Fire Sounds</option>
+  <option value="waveSound">Wave Sounds</option>
+  <option value="rainSound">Rainfall Sounds</option>
+  <option value="snowSound">Snow Blizzard Sounds</option>
+  <option value="relaxSound">Relaxing Music</option>
+  <option value="jazzsound">Jazz Piano</option>
+  <option value="gentleSound">Gentle Music</option>
+  <option value="hamonySound">Harmony Sound</option>
+</select>
+<!--this is the display click option which is called here but the function is on main JS file-->
+<button onclick="display()">Display</button>
+<div id="results"></div>
+
+</div>
+
+
 </body>
 
     <main>
       <section>
         <article>
-          <h2>Sounds</h2>
+          <!--<h2>Sounds</h2>
            <p>Whether you are looking to relax and destress or uplift and feel happy our playlists can help! Explore our sounds to help. </p>
         </article>
-      </section>
+      </section>-->
+      <script src="./assets/main.js"></script>
     </main>
 
     <footer>
         <span>Feel free to write a positive comment on our positivty board!</span>
+        <!--Adding a button to navigate to the home page-->
+        <a href="home.html" class="Btnhome">
+          <button type="home">Home</button></a>
     </footer>
 
 </html>
