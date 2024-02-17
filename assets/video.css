@@ -29,7 +29,7 @@ h1 {
 
 nav ul {
     display: flex; 
-    /* justify-content: space-evenly;  */
+    justify-content: space-evenly;  
     margin-right: 33px;
     min-width: 300px;
     list-style-type: none;
@@ -55,8 +55,8 @@ section {
 } 
 
 h2 {
-  /* margin: 4% 0; */
-  /* padding-top: 2%; */
+  margin: 4% 0; 
+  padding-top: 5%; 
   display: flex;
   flex: 1 1 0;
 }
@@ -74,7 +74,10 @@ footer {
     display: flex;
     justify-content: center;
     padding: 1%;
+    background-color: rgb(246, 209, 96);
+    color: black;
     font-weight: bold;
+    border-bottom:0;
 }
 
 @media screen and (max-width: 768px) {
@@ -85,5 +88,8 @@ footer {
   
     section {
       padding-right: 0;
+      margin-top: 30%;
+      width: 100%;
+      text-align: center;
     }
 }
