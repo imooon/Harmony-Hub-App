@@ -1,8 +1,14 @@
-var click = document.querySelector()
+// var click = document.querySelector()
 
-var onClick = 
+var onClick = document.querySelector()
 
-onClick.addEventListener("click", function() {
-    count++;
-    setCounterText();
+// function clickForPicture
+
+// onClick.addEventListener("click", function() {
+//     count++;
+//     setCounterText();
+//   });
+
+  document.getElementById('button').addEventListener('click", function() {
+  document.getElementById('picture').src = './images/dogwithballimage.jpeg';
   });
