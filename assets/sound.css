@@ -77,10 +77,14 @@ footer {
     header,
     main {
       flex-direction: column;
+      margin-top: auto;
     }
   
     section {
       padding-right: 0;
+      margin-top: 30%;
+      width: 100%;
+      text-align: center;
     }
   
     /* aside {
