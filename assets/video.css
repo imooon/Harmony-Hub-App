@@ -11,10 +11,16 @@ body {
 }
   
 header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
     display: flex;
-    justify-content: space-between; 
-    align-items: center; 
+    justify-content: space-between;
+    align-items: center;
     padding: 1%;
+    background-color: rgb(246, 209, 96);
+    color: black;
 }
   
 h1 {
@@ -35,6 +41,12 @@ nav a {
     color: black;
     font-weight: bold; 
     text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10%;
 }
 
 section {
