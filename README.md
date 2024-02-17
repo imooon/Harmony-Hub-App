@@ -24,11 +24,12 @@ Nyakundi, H. (2021, December 8). How to Write a Good Readme File for Your GitHub
 
 Request-Response: The Full-Stack Blog. (2023, November, 14). Professional Readme Guide. Retrieved January 7, 2024
 
+Robinson, L. & Smith, M. (2023, November 8). How to Fall Asleep Fast and Sleep Better. HelpGuide.org. https://www.helpguide.org/articles/sleep/getting-better-sleep.htm
+
+Robinson, L. & Smith, M. (2024, January 9). Stress Management: How to Reduce and Relieve Stress. HelpGuide.org. https://www.helpguide.org/articles/stress/stress-management.htm
+
 University of Toronto. (2023). Coding Boot Camp [Source Code].
 
 W3Schools. (n.d.). HTML Background Images. https://www.w3schools.com/html/html_images_background.asp
-
-
-
 
 
