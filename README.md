@@ -18,7 +18,9 @@ Harmoney Hub - A feel good wellness application!
 
 # Credits
 
-Nyakundi, Hillary. (2021, December 8). How to Write a Good Readme File for Your GitHub Project. FreeCodeCamp. https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/
+Fitzgerald, A. (2022, June 17). How to Make an HTML Text Box [Examples]. Hubspot. https://blog.hubspot.com/website/html-text-box
+
+Nyakundi, H. (2021, December 8). How to Write a Good Readme File for Your GitHub Project. FreeCodeCamp. https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/
 
 Request-Response: The Full-Stack Blog. (2023, November, 14). Professional Readme Guide. Retrieved January 7, 2024
 
