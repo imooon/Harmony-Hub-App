@@ -3,3 +3,94 @@
     margin:0;
     
 }
+
+body{
+    background-color:bisque;
+    background-image:url("/images/balance-110850_1280.jpg");
+    background-size:cover;
+    position:fixed;
+}
+
+.Menu{
+    display:inline-grid;
+    font-size:3em;
+    font-family: comic;
+    margin-top:5%;
+    
+    
+
+}
+
+#soundBtn{
+    font-family: comic;
+    font-size:60px;
+    background-color: black;
+    color:white;
+    margin-bottom:80px;
+    border-radius:15%;
+}
+
+#videoBtn{
+    font-family: comic;
+    font-size:60px;
+    background-color: black;
+    color:white;
+    margin-bottom:80px;
+    border-radius:15%;
+}
+
+#quizBtn{
+    font-family: comic;
+    font-size:60px;
+    background-color: black;
+    color:white;
+    margin-bottom:80px;
+    border-radius:15%;
+}
+
+#informationBtn{
+    font-family: comic;
+    font-size:50px;
+    background-color: black;
+    color:white;
+    margin-bottom:80px;
+    border-radius:15%;
+}
+
+#positiveBtn{
+    font-family: comic;
+    font-size:60px;
+    background-color: black;
+    color:white;
+    margin-bottom:30%;
+    border-radius:15%;
+    padding:10px;
+}
+
+h3{
+    font-size:30px;
+    
+}
+
+
+.contact{
+    font-size:40px;
+   position:fixed;
+   right:12%;
+   bottom:15%;
+   color:rgb(153, 92, 92);
+   background: linear-gradient(50deg, rgb(212, 162, 101) 100% , rgb(78, 73, 3) 100%);
+   cursor:pointer;
+   border-radius:8px;
+}
+
+.about{
+    font-size:40px;
+    position:fixed;
+    right:4%;
+    bottom:4%;
+    color:rgb(153, 92, 92);
+    background: linear-gradient(50deg, rgb(212, 162, 101) 100% , rgb(78, 73, 3) 100%);
+    cursor:pointer;
+    border-radius:8px;
+}

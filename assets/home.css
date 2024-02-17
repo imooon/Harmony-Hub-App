@@ -4,14 +4,37 @@
 }
 
 h3{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:inherit;
     font-size: 4em;
+    
 
 }
 
-main{
-    background-color:radial-gradient(ellipse at center, rgba(255,254,234,1) 0%, rgba(255,254,234,1) 35%, #B7E8EB 100%);
-    
-    overflow: hidden;
-  
+body{
+    background-color:bisque;
+    background-image:url("/images/balance-110850_1280.jpg");
+    background-size:cover;
+}
+
+#quote{
+    font-size:3em;
+    font-family:comic;
+    text-align:center;
+  margin-top:10%;
+  color:white;
+
+}
+
+#exploreBtn{
+    text-align:center;
+    font-size:2em;
+    font-family:comic;
+    bottom:30px;
+    right:30%;
+    padding:10px 30px;
+    color:rgb(126, 102, 102);
+    background: linear-gradient(50deg, rgb(204, 168, 124) 100% , rgb(15, 14, 1) 100%);
+    cursor:pointer;
+    position:fixed;
+    border-radius:10px
 }

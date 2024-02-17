@@ -1,0 +1,30 @@
+*{
+    padding:0;
+    margin:0;
+    
+}
+
+body{
+    background:linear-gradient(50deg, rgb(155, 126, 90) 100% , rgb(15, 14, 1) 100%);
+   
+    display:flex;
+    height: 100vh;
+    align-items:center;
+    flex-direction:column;
+    justify-content:flex-start;
+}
+
+.about{
+    font-size:5em;
+    font-family:comic;
+    
+
+}
+.contact{
+    font-size:5em;
+    font-family:comic;
+    text-align: center;
+    bottom:15%;
+    align-self:center;
+    
+}
