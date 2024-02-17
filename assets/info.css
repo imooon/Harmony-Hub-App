@@ -21,6 +21,7 @@ header {
     padding: 1%;
     background-color: rgb(246, 209, 96);
     color: black;
+    z-index: 1000;
 }
   
 h1 {
