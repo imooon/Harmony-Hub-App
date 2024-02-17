@@ -54,7 +54,10 @@ section {
 } 
 
 h2 {
-  padding-top: 10%;
+    margin: 4% 0;
+    padding-top: 10%;
+    display: flex;
+    flex: 1 1 0;
 }
 
 p {
@@ -81,10 +84,8 @@ footer {
   
     section {
       padding-right: 0;
-    }
-  
-    /* aside {
+      margin-top: 30%;
       width: 100%;
       text-align: center;
-    } */
+    }
 }

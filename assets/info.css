@@ -29,12 +29,13 @@ h1 {
 
 nav ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
     min-width: 300px;
     list-style-type: none;
     padding: 10px;
     margin: 10px;
-    word-spacing: 20px;
+    
+    /* word-spacing: 1em; */
 }
 
 nav a {
@@ -45,7 +46,7 @@ nav a {
 
 main {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
     padding: 10%;
 }
 
@@ -55,9 +56,10 @@ section {
 } 
 
 h2 {
+  margin: 4% 0;
   padding-top: 2%;
   display: flex;
-  /* flex: 1 1 0; */
+  flex: 1 1 0;
 }
 
 p {
@@ -81,8 +83,7 @@ footer {
 
 @media screen and (max-width: 768px) {
     header, 
-    main, 
-    h1 {
+    main {
       flex-direction: column;
       margin-top: auto;
     }
