@@ -23,6 +23,8 @@ Harmoney Hub - A feel-good wellness application!
 
 Fitzgerald, A. (2022, June 17). How to Make an HTML Text Box [Examples]. Hubspot. https://blog.hubspot.com/website/html-text-box
 
+Free Code Camp. (2019, May 11). Code your own YouTube app: YouTube API + HTML + CSS + JavaScript (full tutorial) [Video]. YouTube. https://www.youtube.com/watch?v=9sWEecNUW-o
+
 Nyakundi, H. (2021, December 8). How to Write a Good Readme File for Your GitHub Project. FreeCodeCamp. https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/
 
 Request-Response: The Full-Stack Blog. (2023, November, 14). Professional Readme Guide. Retrieved January 7, 2024
