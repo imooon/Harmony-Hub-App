@@ -14,7 +14,8 @@ $(document).ready(function() {
       $.getJSON(url, options, function(data){
         console.log(data)
         var id = data.items[0].snippet.resourceId.videoId;
-        mainVideo(id);
+        mainVid(id);
+        resultsLoop();
       })
     }
 
@@ -23,6 +24,6 @@ $(document).ready(function() {
     }
 
     function resultsLoop() {
-        
+
     }
 });
