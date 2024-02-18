@@ -103,3 +103,24 @@ button:hover{
     grid-template-columns:repeat(auto-fit, minimax(200px, 1fr));
     grid-gap:20px;
 }
+
+.album{
+text-align:center;
+}
+
+
+.album img{
+width:100%;
+border-radius: 8px;
+}
+
+.album h2{
+    margin-top:10px;
+    margin-bottom:5px;
+    font-size:18px;
+}
+
+.album p {
+    color:black;
+    font-size:15px;
+}
