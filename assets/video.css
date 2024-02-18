@@ -28,6 +28,7 @@ h1 {
     font-size: 200%;
 }
 
+/* Navigation unordered list */
 nav ul {
     display: flex; 
     justify-content: space-evenly;  
