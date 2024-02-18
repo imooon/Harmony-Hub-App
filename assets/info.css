@@ -14,7 +14,7 @@ header {
     position: fixed;
     left: 0;
     top: 0;
-    width: 100%;
+    width: 99%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -85,6 +85,14 @@ footer {
     color: black;
     font-weight: bold;
     border-bottom:0;
+ feature/js-workspace2
+  }
+
+  /* added style to search widget*/
+  .ui-widget{
+    margin-top:7%;
+  }
+=======
 }
 
 @media screen and (max-width: 768px) {
@@ -101,3 +109,4 @@ footer {
       text-align: center;
     }
 }
+ main

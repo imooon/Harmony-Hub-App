@@ -40,6 +40,8 @@ nav a {
     color: black; 
     font-weight: bold;
     text-decoration: none;
+    
+    
 }
 
 /* 20px of spacing between list items */
@@ -81,6 +83,85 @@ footer {
     background-color: rgb(246, 209, 96);
     color: black;
     font-weight: bold;
+ feature/js-workspace2
+  }
+
+  /*adding style to the home button*/
+  
+.Btnhome button {
+    font-size:2em;
+    cursor:pointer;
+    color:black;
+    background-color:rgb(131, 131, 167);
+    border-radius:10px;
+    padding:5px 10px;
+    margin-left:550%;
+  
+
+}
+
+.Btnhome button:hover{
+    background-color:rgb(153, 92, 92);
+}
+
+.Btnhome{
+    text-align:right;
+}
+
+.playList{
+    max-width:800px;
+    margin:20px auto;
+    padding:20px;
+}
+
+label{
+    font-weight:bold;
+    margin-right:10px;
+}
+
+select, button{
+    padding:8px;
+    margin-bottom:10px;
+    border-radius:4px;
+    border:1px solid black;
+}
+
+button{
+    background-color:rgb(163, 183, 238);
+    cursor: pointer;
+}
+
+button:hover{
+    background-color:rgb(153, 92, 92);
+}
+
+#result{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minimax(200px, 1fr));
+    grid-gap:20px;
+}
+
+.album{
+text-align:center;
+}
+
+
+.album img{
+width:100%;
+border-radius: 8px;
+}
+
+.album h2{
+    margin-top:10px;
+    margin-bottom:5px;
+    font-size:18px;
+}
+
+.album p {
+    color:black;
+    font-size:15px;
+}
+=======
     border-bottom:0;
 }
 
@@ -98,3 +179,4 @@ footer {
       text-align: center;
     }
   }
+ main
