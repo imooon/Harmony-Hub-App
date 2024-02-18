@@ -1,3 +1,7 @@
+* {
+  color: black;
+}
+
 body {
     background-image: url(../images/sunset.jpg);
     background-repeat: no-repeat;
@@ -87,11 +91,9 @@ footer {
     border-bottom:0;
   }
 
-  /* added style to search widget*/
-  .ui-widget{
+/* added style to search widget*/
+.ui-widget{
     margin-top:7%;
-  }
-=======
 }
 
 @media screen and (max-width: 768px) {
@@ -108,4 +110,3 @@ footer {
       text-align: center;
     }
 }
- main
