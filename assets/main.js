@@ -1,83 +1,39 @@
-// this is a function for when the display button is clicked what would be displayed
-function display() {
-    var selectOptions= document.getElementById("selectOptions");
-    var selectedOption=selectOptions.options[selectOptions.selectedIndex].value;
-  //this encode the selected option for URL
-    var searchQuery = encodeURIComponent(selectedOption);
-
-// The Spotify API endpoint search
-  var apiUrl= "https://api.spotify.com/v1/search?type=album&q="  + searchQuery;
+// Function to obtain access token from Spotify API
+async function getAccessToken() {
+   var clientId = 'dcabd8fdb94641e392e612ccfdce2d0a';
+    var clientSecret = '45b7191be30940b7b6cf432d58563429';
+    var authUrl = 'https://accounts.spotify.com/api/token';
 
 
-  fetch(apiUrl)
-   .then(function(response){
-    return response.json();
-   })
-   .then(function(date){
-    displayResult(date);
-   })
-   //.catch(function(error){
-   // console.error('Error',error);
-   //});
+    try {
+        var response = await fetch(authUrl, {
+            method: 'POST',
+            body: 'grant_type=client_credentials&client_id=' + clientId + '&client_secret=' + clientSecret,
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+        });
 
-}
-//this is the function to display the data after the response through json() also using a loop to target more albums
-function displayResult(data){
-    var resultsDiv= document.getElementById("results");
-    resultsDiv.innerHTML=""; // this is to clear previous result, still testing not sure if i want to include this option
+        if (!response.ok) {
+            throw new Error('Failed to fetch access token');
+        }
 
-
-    var albums = data.albums.items;
-    for (var i = 0;  i<albums.length; i++){
-    var album =albums[i];
-    var albumName = album.name;
-    var artistName = album.artists[0].name;
-    var albumArt = album.image[0].url;// get the URL of the first album image
-
-    var albumElement= document.createElement("div");
-    albumElement.classList.add("album");
-    albumElement.innerHTML="<img src='" + albumArt + "'alt='" + albumName + "<h2>"+ "'>" + albumName + "</h2>" + "<p>Artist:" + artistName + "</p>";
-
-    resultsDiv.appendChild(albumElement);
-
+        var data = await response.json();
+        var accessToken = data.access_token;
+        console.log('Access Token:', accessToken);
+        return accessToken;
+    } catch (error) {
+        console.error('Error fetching access token:', error);
+        throw error;
     }
 }
 
 
+// Function to display data on button click
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// Call the function to fetch and display data when the page loads
+fetchAndDisplayData();
 
 
 function soundPage(){
@@ -98,3 +54,6 @@ function informationPage(){
 function positivePage(){
     window.location.href="positive.html";
 }
+
+
+
