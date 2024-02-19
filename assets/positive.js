@@ -42,4 +42,5 @@ function displayData() {
     displayDiv.textContent = savedData;
 }
 
+// Calls displayData function to display the message input on Positivity Board page
 displayData();
