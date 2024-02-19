@@ -28,6 +28,31 @@ async function getAccessToken() {
     }
 }
 
+// Function to display pictures and play sound associated with the tracks
+function displayData(tracks) {
+    var pictureContainer = document.getElementById("pictureContainer");
+    pictureContainer.innerHTML = ""; // Clear previous pictures
+
+    tracks.forEach(track => {
+        var trackName = track.name;
+        var artistName = track.artists[0].name;
+        var trackPhoto = track.album.images[0].url; // Use the first image as photo
+        var trackPreviewUrl = track.preview_url; // Get the preview URL for the track
+
+        var pictureElement = document.createElement("div");
+        pictureElement.classList.add("picture");
+        pictureElement.innerHTML = `
+            <img src="${trackPhoto}" alt="${trackName}">
+            <p>${trackName} by ${artistName}</p>
+        `;
+
+        var audioElement = new Audio(trackPreviewUrl);
+        audioElement.controls = true;
+
+        pictureElement.appendChild(audioElement);
+        pictureContainer.appendChild(pictureElement);
+    });
+}
 
 // Function to display data on button click
 
