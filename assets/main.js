@@ -56,6 +56,9 @@ function displayData(tracks) {
 
 // Function to display data on button click
 
+function display() {
+    fetchAndDisplayData();
+}
 
 // Call the function to fetch and display data when the page loads
 fetchAndDisplayData();
