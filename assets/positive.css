@@ -77,6 +77,11 @@ p {
   font-family: 'Caveat',  'Roboto';
 } */
 
+button {
+   display: flex;
+   /* vertical-align: bottom; */
+}
+
 footer {
     position: fixed;
     left: 0;
