@@ -28,9 +28,18 @@
 //   showPicture();
 // });
 
+// Function to save message to local storage 
 function saveData() {
     var inputData = document.getElementById('message').value;
+    localStorage.setItem('savedData', inputData);
+    displayData();
 }
 
-    var savedData =
+// Function to display saved message
+function displayData() {
+    var savedData = localStorage.getItem('savedData');
+    var displayDiv = document.getElementById('savedData');
+    displayDiv.textContent = savedData;
 }
+
+displayData();

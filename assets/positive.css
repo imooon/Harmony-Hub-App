@@ -80,6 +80,10 @@ button {
    /* vertical-align: bottom; */
 }
 
+#savedData {
+    padding-top: 3%;
+}
+
 footer {
     position: fixed;
     left: 0;
