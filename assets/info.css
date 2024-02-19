@@ -46,7 +46,7 @@ nav a {
     text-decoration: none;
 }
 
-/* 20px of spacing between list items */
+/* 20px of spacing between navigation list items in header*/
 nav li {
     margin-right: 20px;
 }
@@ -54,9 +54,8 @@ nav li {
 main {
     display: flex;
     flex-wrap: wrap; 
-    padding: 8.5%;
-    color: black;
-    padding-left: 6.5%;
+    padding: 15%;
+    padding-left: 10%; 
 }
 
 section {
@@ -92,7 +91,7 @@ footer {
     border-bottom:0;
   }
 
-/* added style to search widget*/
+/* Added style to search widget*/
 .ui-widget{
     margin-top:7%;
 }
@@ -110,4 +109,10 @@ footer {
       width: 100%;
       text-align: center;
     }
+}
+
+@media screen and (min-width: 576px) {
+  main{
+  width: 500px;
+}
 }
