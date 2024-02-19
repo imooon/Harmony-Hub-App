@@ -12,16 +12,17 @@
 
 <body>
   <header>
-    <h1>Harmony Hub!</h1>
+    <h1>Harmony Hub</h1>
     <nav>
       <ul>
-        <li><a href="./main.html">Main</a></li>
-        <li><a href="./quiz.html">Quiz</a></li>
-        <li><a href="./sound.html">Sounds</a></li>
-        <li><a href="./video.html">Videos</a></li>
-        <li><a href="./info.html">Information Board</a></li>
-        <li><a href="./positive.html">Positivity Board</a></li>
-        <li><a href="./contact.html">About/Contact Us</a></li>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="main.html">Main</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="sound.html">Sounds</a></li>
+        <li><a href="video.html">Videos</a></li>
+        <li><a href="info.html">Information Board</a></li>
+        <li><a href="positive.html">Positivity Board</a></li>
+        <li><a href="contact.html">About/Contact Us</a></li>
       </ul>
      </nav>
   </header>
@@ -32,12 +33,13 @@
         <h2>Positivity Board</h2>
         <p>We invite you to leave a comment on our Positivity Board! Let us know how your day is going, leave a kind message, a funny joke, words of encouragement or a thank you.</p>
         <label for="message">Leave your message here:</label>
-        <br><textarea id="message" rows="10" cols="40" placeholder="Enter text here..."></textarea> </textarea>
-        <button type="submit">Submit</button>
+        <br><textarea type=text id="message" rows="10" cols="40" placeholder="Enter text here..."></textarea> </textarea>
+        <button onClick="saveData()">Submit</button> 
         <!-- <p class="count" id="container">
             <button id="button">Click for a happy surprise!</button>
             <img id="picture" src="" alt="Ball with teeth in the mouth of dog"> 
         </p>  -->
+        <div id="savedData"></div>
       </article>
     </section>
   </main>

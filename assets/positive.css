@@ -37,7 +37,6 @@ nav ul {
     list-style-type: none;
     padding: 10px;
     margin: 10px;
-    color:black;
 }
 
 nav a {
@@ -47,13 +46,12 @@ nav a {
 /* 20px of spacing between list items */
 nav li {
     margin-right: 20px;
-    color: black;
 }
 
 main {
     display: flex;
     flex-wrap: wrap;
-    padding: 10%;
+    padding: 7%;
 }
 
 section {
@@ -91,14 +89,44 @@ footer {
     justify-content: center;
     padding: 1%;
     background-color: rgb(246, 209, 96);
-    color: black;
     font-weight: bold;
     border-bottom:0;
 }
 
+@media screen and (max-width: 992px) {
+    header,
+    main,
+    button {
+      flex-direction: column;
+    }
+  
+    section {
+      padding-right: 0;
+      margin-top: 30%;
+      width: 100%;
+      text-align: center;
+    }
+}
+
 @media screen and (max-width: 768px) {
     header,
-    main {
+    main,
+    button {
+      flex-direction: column;
+    }
+  
+    section {
+      padding-right: 0;
+      margin-top: 30%;
+      width: 100%;
+      text-align: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    header,
+    main,
+    button {
       flex-direction: column;
     }
   

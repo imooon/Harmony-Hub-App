@@ -28,3 +28,9 @@
 //   showPicture();
 // });
 
+function saveData() {
+    var inputData = document.getElementById('message').value;
+}
+
+    var savedData =
+}
