@@ -51,7 +51,7 @@ nav li {
 main {
     display: flex;
     flex-wrap: wrap;
-    padding: 7%;
+    padding: 10%;
 }
 
 section {
@@ -110,6 +110,12 @@ footer {
       width: 100%;
       text-align: center;
     }
+}
+
+@media screen and (min-width: 576px) {
+    main{
+    width: 500px;
+}
 }
 
 @media screen and (max-width: 768px) {
