@@ -128,43 +128,103 @@ border-radius: 8px;
     font-size:15px;
 }
 
+.track-audio {
+    width: 100%; 
+    margin-top: 10px; 
+}
+
+.picture img{
+    font-size:6px;
+}
 
 /* Default styles for larger screens (992px and above) */
 @media only screen and (min-width: 992px) {
+    header {
+        padding: 20px;
+    }
     body {
-      font-size: 16px; /* Example: Adjust font size for larger screens */
-      padding: 20px; /* Example: Adjust padding for larger screens */
+      font-size: 16px; 
+      padding: 20px; 
     }
-  
-    .playList {
-      width: 80%; /* Example: Adjust width for larger screens */
-      margin: 0 auto; /* Example: Center align for larger screens */
-    }
+
+button {
+    font-size: 16px;
+    padding: 10px 20px; 
   }
+    .playList {
+      width: 80%;
+      margin: 0 auto; 
+    }
+
+    .picture img {
+       
+        width: 90%; 
+        height: auto;
+    }
+    .track-audio {
+        
+        width: 80%;
+    }
+}
+  
   
   /* Styles for medium-sized screens (768px to 991px) */
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     body {
-      font-size: 14px; /* Example: Adjust font size for medium-sized screens */
-      padding: 15px; /* Example: Adjust padding for medium-sized screens */
+      font-size: 14px; 
+      padding: 15px; 
     }
   
     .playList {
-      width: 90%; /* Example: Adjust width for medium-sized screens */
-      margin: 0 auto; /* Example: Center align for medium-sized screens */
+      width: 90%; 
+      margin: 0 auto; 
     }
+  
+  header {
+    padding: 15px; 
+  }
+  .picture img {
+   
+    width: 90%;
+    height: auto; 
+  }
+  .track-audio {
+    
+    width: 70%;
+  }
+
+  button {
+    font-size: 14px; 
+  }
   }
   
   /* Styles for smaller screens (576px to 767px) */
   @media only screen and (min-width: 576px) and (max-width: 767px) {
+        header {
+          padding: 10px; 
+      
+        button {
+          font-size: 12px; 
+          padding: 6px 12px; 
+        }
+      }
+      .picture img {
+        
+        width: 70%; 
+        height: auto; 
+      }
+    
     body {
-      font-size: 12px; /* Example: Adjust font size for smaller screens */
-      padding: 10px; /* Example: Adjust padding for smaller screens */
+      font-size: 12px; 
+      padding: 10px; 
     }
-  
+    .track-audio {
+       
+        width: 60%; 
+    }
     .playList {
-      width: 95%; /* Example: Adjust width for smaller screens */
-      margin: 0 auto; /* Example: Center align for smaller screens */
+      width: 95%; 
+      margin: 0 auto; 
     }
   }
   
@@ -179,18 +239,55 @@ border-radius: 8px;
       width: 100%; /* Example: Adjust width for extra small screens */
       margin: 0; /* Example: Remove margin for extra small screens */
     }
-  }
+    header {
+        padding: 5px; 
+      }
+      .track-audio {
+        
+        width: 50%; 
+      }
+    
+      button {
+        font-size: 10px; 
+      }
+      .picture img {
+        
+        width: 50%; 
+        height: auto; 
+    }
+}
+    
+  
   
   /* Styles for very small screens such as phones (320px and below) */
   @media only screen and (max-width: 320px) {
+    header {
+        padding: 2px;
+        
+    }
     body {
-      font-size: 8px; /* Example: Adjust font size for very small screens */
-      padding: 2px; /* Example: Adjust padding for very small screens */
-    }
-  
+        
+      font-size: 50px; 
+      padding: 2px;
+    } 
+}
     .playList {
-      width: 100%; /* Example: Adjust width for very small screens */
-      margin: 0; /* Example: Remove margin for very small screens */
+      width: 100%; 
+      margin: 0; 
     }
-  }
+    .track-audio {
+        
+        width: 70%;
+    }
+    button {
+        font-size: 8px; 
+        padding: 2px 4px; 
+      }
+
+      .picture img {
+        
+        width: 90%; 
+        height: auto;
+    }
   
+}
