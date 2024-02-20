@@ -52,5 +52,27 @@ var comment = document.getElementById("message");
 var saveButton = document.getElementById("save");
 
 function saveLastMessage() {
-  var
+  var positiveMessage = {
+    comment: comment.value.trim(),
+  }
+  localStorage.setItem('positiveMessage', JSON.stringify(positiveMessage))
 }
+
+function renderLastMessage() {
+    var lastMessage = JSON.parse(localStorage.getItem('positiveMessage'))
+    if (lastMessage !== null) {
+        document.getElementById('saved-message').innerHTML = lastMessage.comment;
+    }
+}
+
+saveButton.addEventListener('click', function (event) {
+  event.preventDefault();
+  saveLastMessage();
+  renderLastMessage();  
+});
+
+function init() {
+    renderLastMessage();
+
+}
+init();
