@@ -5,7 +5,8 @@ var quizTxt = [
  { quote: "This is tough but you are tougher❤️"},
  {quote:"Don't be around negative energy❤️"},
  {quote: "We cant learn to fly without crashing a few times❤️"},
-
+{quote:"Do not go where the path may lead, go instead where there is no path and leave a trail❤️"},
+{quote:"Let your faith be bigger than your fears❤️"},
 ];
 
 // Selects element by class

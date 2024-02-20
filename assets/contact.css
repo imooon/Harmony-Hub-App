@@ -23,6 +23,7 @@ body {
     align-items: center;
     max-width: 800px;
     margin-top: 50px;
+    color:white;
 }
 
 .contactUs{
@@ -45,5 +46,54 @@ body {
     max-width: calc(30% - 20px); /* Set maximum width for each item to prevent overflow */
 }
 
+.Contact{
+    flex: 1; /* Allow items to grow and fill available space */
+    border: 1px solid rgb(97, 59, 59);
+    padding: 20px;
+    margin: 10px; /* Add margin between items */
+    width: 30%; /* Set width for each item */
+    max-width: calc(50% - 70px); /* Set maximum width for each item to prevent overflow */
+}
 
+.namesContainer {
+    padding: 50px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(92, 44, 44, 0.1);
+    background: linear-gradient(50deg, rgb(155, 126, 90), rgb(15, 14, 1));
+    margin:20px;
+}
+.ContactInfo{
+    padding:50px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(92, 44, 44, 0.1);
+    background: linear-gradient(50deg, rgb(155, 126, 90), rgb(15, 14, 1));
+   font-size:20px;
+}
+
+
+.contactUs {
+    margin-top: 70px; /* Adjust spacing between sections */
+}
+
+/* Styling for the home button */
+.Btnhome {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.Btnhome button {
+    font-size: 1em;
+    cursor: pointer;
+    color:white;
+    background-color: rgb(73, 52, 27);
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.Btnhome button:hover {
+    background-color: rgba(146, 87, 87, 0.493);
+    margin-left: auto;
+}
 
