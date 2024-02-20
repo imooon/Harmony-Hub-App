@@ -1,8 +1,10 @@
+/* Universal black text unless otherwise specified */
 * {
     /* background-color: rgb(140, 213, 235); */
     color: black;
 }
 
+/* Body styling and image set to cover page */
 body {
     background-image: url(../images/sunset.jpg);
     background-repeat: no-repeat;
@@ -14,7 +16,8 @@ body {
     font-family: 'Caveat', 'Roboto';
     font-size: 22px;
 }
-  
+
+/* Header fixed to top of page and color set */
 header {
     position: fixed; 
     left: 0;
@@ -45,7 +48,8 @@ nav a {
     font-weight: bold; 
     text-decoration: none;
 }
-/* 20px of spacing between list items */
+
+/* 20px of spacing between nnavigation list items */
 nav li {
     margin-right: 20px;
 }
@@ -75,13 +79,14 @@ p {
 }
 
 label {
-  border-radius: 8px;
+  border-radius: 18px;
 }
 
 #savedData {
     padding-top: 3%;
 }
 
+/* 'Save' button styling with cursor pointer and rounded corners*/
 button {
     background-color: black;
     border-radius: 8px;
@@ -100,6 +105,7 @@ button {
     display: flex;
   }
 
+  /* Styling for saved message box */
 .card {
     background-color: rgb(232, 161, 218);
     border: 2px solid #eceff1;
@@ -110,14 +116,14 @@ button {
     padding: 20px;
     width: 30vw;
     height: 20vw;
-    /* float: ;  */
+    display: inline-block;
 }
   
 .card::after {
     content: " ";
     display: block;
     clear: both;
-} 
+}  
 
 .positive-message {
     text-align: center;
@@ -132,6 +138,7 @@ button {
     background-color: whitesmoke;
 }
 
+/* Footer fixed to top of page and color set  */
 footer {
     position: fixed; 
     left: 0;
@@ -145,6 +152,7 @@ footer {
     border-bottom:0;
 }
 
+/* Media query added to accomodate different screen sizes */
 @media screen and (max-width: 992px) {
     header,
     main,

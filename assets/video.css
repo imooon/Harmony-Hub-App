@@ -33,7 +33,7 @@ h1 {
     font-size: 200%;
 }
 
-/* Navigation unordered list */
+/* Navigation unordered list set to top right of page*/
 nav ul {
     display: flex; 
     justify-content: space-evenly;  
@@ -79,6 +79,7 @@ p {
   font-size: 110%;
 }
 
+/* Footer fixed to top of page and color set  */
 footer {
     position: fixed;
     left: 0;
@@ -93,6 +94,7 @@ footer {
     border-bottom:0;
 }
 
+/* Media query added to accomodate different screen sizes */
 @media screen and (max-width: 768px) {
     header,
     main {
