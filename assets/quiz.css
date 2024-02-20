@@ -1,33 +1,79 @@
 * {
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
     box-sizing: border-box;
 }
 
 body {
-    background: rgb(238, 174, 202);
-    background-image: url(./assets/oc-gonzalez-xg8z_KhSorQ-unsplash.jpg);
+    background-image: url('../images/_MG_1208.jpg');
     background-size: cover;
-    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(187, 148, 233, 1) 100%);
-    font-family: 'Roboto', sans-serif; 
+    font-family: 'Caveat', 'Roboto';
+    font-size: 18.5px;
     display: flex;
+    flex-direction: column;
+    /* line-height: 1.3; */
     align-items: center;
     justify-content: center;
     height: 100vh;
     overflow: hidden;
     margin: 0;
+    /* text-align: center; */
 }
 
+/* Header styling */
+#subpages {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1%;
+    background-color: rgb(79, 210, 90);
+    color: black;
+    list-style-type: none;
+    margin-right: 33px;
+    min-width: 300px;
+}
+
+#heading {
+    text-align: left;
+    margin: 0; /* Removed default margin for h1 */
+    flex-grow: 1;
+}
+
+nav ul {
+    display: flex; 
+    justify-content: space-evenly;  
+    list-style-type: none;
+    padding: 0;
+    /* margin: 0; */
+}
+
+/* nav li {
+
+} */
+
+nav a {
+    color: black;
+    font-weight: bold; 
+    text-decoration: none;
+    padding: 10px; /* Added padding  */
+}
+
+
+/* New styling of the subpages */
 .quiz-container {
-    background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(222,102,241,1) 100%); 
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(135,204,138,1) 0%, rgba(76,133,200,0.7467319691548495) 97%); 
     border-radius: 10px;
     box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.3);
-    width: 600px;
+    width: 700px;
     overflow: hidden;
+    margin-top: 70px;
+    line-height: 1.5;
+    font-weight: bold;
 }
 
 .quiz-header {
- padding: 4rem;
+    padding: 4rem;
 }
 
 h2 {
@@ -42,12 +88,25 @@ ul {
 }
 
 ul li {
-   font-size: 1.2rem;
+   font-size: 1.3rem;
    margin: 1rem 0; 
 }
 
 ul li label {
     cursor: pointer;
+}
+
+/* For the results */
+
+#quiz p {
+    text-align: center;
+}
+
+/* For the fetched API advice */
+
+blockquote {
+    text-align: center;
+    font-size: 24px;
 }
 
 button {
@@ -64,9 +123,42 @@ button {
 }
 
 button:hover {
-    background-color: blueviolet;
+    background-color: rgb(61, 137, 230);
 }
 
 button:focus {
-    background-color: lightgreen;
+    background-color:rgb(79, 210, 90);
+}
+
+#submit {
+    font-size: 25px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    background-color: rgb(79, 210, 90);
+    color: black;
+    font-weight: bold;
+    border-bottom:0;
+    font-size: 22px;
+}
+
+@media screen and (max-width: 768px) {
+    header,
+    main {
+      flex-direction: column;
+    }
+  
+    section {
+      padding-right: 0;
+      margin-top: 30%;
+      width: 100%;
+      text-align: center;
+    }
 }

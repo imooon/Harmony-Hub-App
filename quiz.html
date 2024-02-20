@@ -3,10 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/quiz.css">
-    <title>Wellness Quiz</title>
+    <title>Self Assessment Quiz</title>
 </head>
 <body>
+    <div id="subpages">
+        <div id="heading">
+            <h1>Self-evaluation Quiz</h1>
+        </div>
+      <nav>
+        <ul>
+          <li><a href="./home.html">Home</a></li>
+          <li><a href="./main.html">Main</a></li>
+          <li><a href="./quiz.html">Quiz</a></li>
+          <li><a href="./sound.html">Sounds</a></li>
+          <li><a href="./video.html">Videos</a></li>
+          <li><a href="./info.html">Information Board</a></li>
+          <li><a href="./positive.html">Positivity Board</a></li>
+          <li><a href="./contact.html">About/Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
     <div class="quiz-container" id="quiz">
         <div class="quiz-header">
         <h2 id="question">Quiz</h2> 
@@ -30,15 +50,15 @@
                 <input type="radio" name="answer" id="d" class="answer">
                 <label for="d" id="d_text"></label>
             </li>
-        </ul>   
+        </ul>
         </div>
-        <button id="submit">Submit</button>
-        <a href="./assets/main.css">
-            <button>Go back</button>
-        </a>
+        <button id="submit">Next question</button>
     </div>
 
-    
+    <footer>
+        <span>Thanks for visiting and have a great day!</span>
+      </footer>
+
     <script src="./assets/quiz.js"></script>
 </body>
 </html>
