@@ -77,14 +77,6 @@ p {
 label {
   border-radius: 8px;
 }
-/* #message {
-  font-family: 'Caveat',  'Roboto';
-} */
-
-/* button {
-   display: flex;
-   vertical-align: bottom; 
-} */
 
 #savedData {
     padding-top: 3%;
@@ -104,7 +96,7 @@ button {
     transition-duration: 0.15s;
     transition-property: background-color;
     transition-timing-function: linear;
-    margin: 0.3em auto;
+    margin: 0.2em;
     display: flex;
   }
 
@@ -118,14 +110,14 @@ button {
     padding: 20px;
     width: 30vw;
     height: 20vw;
-    float: left;
+    /* float: ;  */
 }
   
-/* .card::after {
+.card::after {
     content: " ";
     display: block;
     clear: both;
-} */
+} 
 
 .positive-message {
     text-align: center;
@@ -201,5 +193,11 @@ footer {
 @media screen and (min-width: 576px) {
     main{
     width: 500px;
+    }
 }
-}
+
+/* @media only screen and (max-width: 800px) {
+    .card {
+      width: 80vw;
+    }
+  }  */
