@@ -11,7 +11,7 @@ body {
 }
   
 header {
-    position: fixed;
+    
     left: 0;
     top: 0;
     width: 100%;
@@ -19,7 +19,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1%;
-    background-color: rgb(246, 209, 96);
     color: black;
 }
   
@@ -73,40 +72,19 @@ p {
 }
 
 footer {
-    position: fixed;
+    
     left: 0;
     bottom: 0;
     width: 100%;
     display: flex;
     justify-content: center;
     padding: 1%;
-    background-color: rgb(246, 209, 96);
+  
     color: black;
     font-weight: bold;
- feature/js-workspace2
-  }
-
-  /*adding style to the home button*/
-  
-.Btnhome button {
-    font-size:2em;
-    cursor:pointer;
-    color:black;
-    background-color:rgb(131, 131, 167);
-    border-radius:10px;
-    padding:5px 10px;
-    margin-left:550%;
-  
-
+ 
 }
 
-.Btnhome button:hover{
-    background-color:rgb(153, 92, 92);
-}
-
-.Btnhome{
-    text-align:right;
-}
 
 .playList{
     max-width:800px;
@@ -119,21 +97,8 @@ label{
     margin-right:10px;
 }
 
-select, button{
-    padding:8px;
-    margin-bottom:10px;
-    border-radius:4px;
-    border:1px solid black;
-}
 
-button{
-    background-color:rgb(163, 183, 238);
-    cursor: pointer;
-}
 
-button:hover{
-    background-color:rgb(153, 92, 92);
-}
 
 #result{
     display:grid;
@@ -161,22 +126,100 @@ border-radius: 8px;
     color:black;
     font-size:15px;
 }
-=======
-    border-bottom:0;
-}
 
 @media screen and (max-width: 768px) {
     header,
     main {
-      flex-direction: column;
-      margin-top: auto;
+        flex-direction: column;
+          
+        width: 50%;
     }
   
     section {
-      padding-right: 0;
-      margin-top: 30%;
-      width: 100%;
-      text-align: center;
+        flex-direction: column;
+          
+        width: 100%;
     }
-  }
- main
+
+    footer{
+        flex-direction: column;
+          
+        width: 100%;
+    }
+
+    .playlist{
+        flex-direction: column;
+          
+        width: 100%;
+      }
+    }
+
+    
+  
+    @media screen and (max-width: 576px) {
+        header,
+        main {
+          flex-direction: column;
+          
+          width: 50%;
+        }
+      
+        section {
+            flex-direction: column;
+          width: 50%;
+          text-align: center;
+        }
+    
+        footer{
+            flex-direction: column;
+          
+          width: 50%;
+        }
+    
+        .playlist{
+            flex-direction: column;
+          
+          width: 100%;
+          }
+
+          label{
+            flex-direction: column;
+          
+            width: 100%;
+          }
+        }
+    
+        @media screen and (max-width: 992px) {
+            header,
+            main {
+                flex-direction: column;
+                  
+                width: 100%;
+            }
+          
+            section {
+                flex-direction: column;
+                  
+                width: 50%;
+            }
+        
+            footer{
+                flex-direction: column;
+                  
+                width: 100%;
+            }
+        
+            .playlist{
+                flex-direction: column;
+                  
+                width:100%;
+           
+              }
+
+              label{
+                flex-direction: column;
+                
+                width: 50%;
+              }
+            }
+        
