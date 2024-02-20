@@ -7,7 +7,7 @@ var quizData = [
         b: "Just another day...",
         c: "Today is definitely not my day",
         d: "The day just started, I feel good!",
-        correct: "c",
+        // correct: "c",
     },
     {
         question: "How many glasses of water did you drink today?",
@@ -15,7 +15,7 @@ var quizData = [
         b: "Four",
         c: "I don't remember",
         d: "Not enough",
-        correct: "a",
+        // correct: "a",
     },
     {
         question: "How are you feeling today?",
@@ -23,7 +23,7 @@ var quizData = [
         b: "I feel confident and happy!",
         c: "I feel just fine",
         d: "I feel good",
-        correct: "b",
+        // correct: "b",
     },
     {
         question: "What makes you happy?",
@@ -31,7 +31,7 @@ var quizData = [
         b: "Spending time with friends & family",
         c: "Going out for a walk",
         d: "Reading a book",
-        correct: "b",
+        // correct: "b",
     }
 ];
 
