@@ -3,6 +3,7 @@
 }
 
 body {
+    background-color:rgb(79, 210, 90);
     background-image: url('../images/_MG_1208.jpg');
     background-size: cover;
     font-family: 'Caveat', 'Roboto';
