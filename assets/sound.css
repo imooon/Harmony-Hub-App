@@ -20,6 +20,7 @@ header {
     align-items: center;
     padding: 1%;
     color: black;
+    background-color: rgb(246, 209, 96);
 }
   
 h1 {
@@ -127,99 +128,69 @@ border-radius: 8px;
     font-size:15px;
 }
 
-@media screen and (max-width: 768px) {
-    header,
-    main {
-        flex-direction: column;
-          
-        width: 50%;
+
+/* Default styles for larger screens (992px and above) */
+@media only screen and (min-width: 992px) {
+    body {
+      font-size: 16px; /* Example: Adjust font size for larger screens */
+      padding: 20px; /* Example: Adjust padding for larger screens */
     }
   
-    section {
-        flex-direction: column;
-          
-        width: 100%;
+    .playList {
+      width: 80%; /* Example: Adjust width for larger screens */
+      margin: 0 auto; /* Example: Center align for larger screens */
     }
-
-    footer{
-        flex-direction: column;
-          
-        width: 100%;
-    }
-
-    .playlist{
-        flex-direction: column;
-          
-        width: 100%;
-      }
-    }
-
-    
+  }
   
-    @media screen and (max-width: 576px) {
-        header,
-        main {
-          flex-direction: column;
-          
-          width: 50%;
-        }
-      
-        section {
-            flex-direction: column;
-          width: 50%;
-          text-align: center;
-        }
-    
-        footer{
-            flex-direction: column;
-          
-          width: 50%;
-        }
-    
-        .playlist{
-            flex-direction: column;
-          
-          width: 100%;
-          }
-
-          label{
-            flex-direction: column;
-          
-            width: 100%;
-          }
-        }
-    
-        @media screen and (max-width: 992px) {
-            header,
-            main {
-                flex-direction: column;
-                  
-                width: 100%;
-            }
-          
-            section {
-                flex-direction: column;
-                  
-                width: 50%;
-            }
-        
-            footer{
-                flex-direction: column;
-                  
-                width: 100%;
-            }
-        
-            .playlist{
-                flex-direction: column;
-                  
-                width:100%;
-           
-              }
-
-              label{
-                flex-direction: column;
-                
-                width: 50%;
-              }
-            }
-        
+  /* Styles for medium-sized screens (768px to 991px) */
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    body {
+      font-size: 14px; /* Example: Adjust font size for medium-sized screens */
+      padding: 15px; /* Example: Adjust padding for medium-sized screens */
+    }
+  
+    .playList {
+      width: 90%; /* Example: Adjust width for medium-sized screens */
+      margin: 0 auto; /* Example: Center align for medium-sized screens */
+    }
+  }
+  
+  /* Styles for smaller screens (576px to 767px) */
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    body {
+      font-size: 12px; /* Example: Adjust font size for smaller screens */
+      padding: 10px; /* Example: Adjust padding for smaller screens */
+    }
+  
+    .playList {
+      width: 95%; /* Example: Adjust width for smaller screens */
+      margin: 0 auto; /* Example: Center align for smaller screens */
+    }
+  }
+  
+  /* Styles for extra small screens (575px and below) */
+  @media only screen and (max-width: 575px) {
+    body {
+      font-size: 10px; /* Example: Adjust font size for extra small screens */
+      padding: 5px; /* Example: Adjust padding for extra small screens */
+    }
+  
+    .playList {
+      width: 100%; /* Example: Adjust width for extra small screens */
+      margin: 0; /* Example: Remove margin for extra small screens */
+    }
+  }
+  
+  /* Styles for very small screens such as phones (320px and below) */
+  @media only screen and (max-width: 320px) {
+    body {
+      font-size: 8px; /* Example: Adjust font size for very small screens */
+      padding: 2px; /* Example: Adjust padding for very small screens */
+    }
+  
+    .playList {
+      width: 100%; /* Example: Adjust width for very small screens */
+      margin: 0; /* Example: Remove margin for very small screens */
+    }
+  }
+  
