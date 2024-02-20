@@ -1,59 +1,47 @@
+// Created array for the questions
+
 var quizData = [
-    
     {
-        question: "Why is mental well-being important?",
-        a: "Because it does not promote healthy relationships",
-        b: "Because it makes us sadder",
-        c: "It is not",
-        d: "Because it helps reach our full potential",
-        correct: "d",
-    },
-    {
-        question: "How does regular exercise contribute to mental well-being?",
-        a: "It releases endorphins, improving mood",
-        b: "It has no impact on mental well-being",
-        c: "It increases stress levels",
-        d: "It causes fatigue",
-        correct: "a",
-    },
-    {
-        question: "What is mindfulness?",
-        a: "A type of meditation",
-        b: "Being fully present and engaged in the current moment",
-        c: "A form of intense focus",
-        d: "A state of deep sleep",
-        correct: "b",
-    },
-    {
-        question: "Why is practicing gratitude beneficial?",
-        a: "It has no impact on mental health",
-        b: "It increases stress levels",
-        c: "It helps to shift focus from negative to positive aspects of life",
-        d: "It leads to overthinking",
+        question: "How is your day going so far?",
+        a: "It is going great!",
+        b: "Just another day...",
+        c: "Today is definitely not my day",
+        d: "The day just started, I feel good!",
         correct: "c",
     },
     {
-        question: "What is a common symptom of burnout?",
-        a: "Increased energy and motivation",
-        b: "Decreased productivity and exhaustion",
-        c: "Improved mental clarity",
-        d: "Enhanced job satisfaction",
+        question: "How many glasses of water did you drink today?",
+        a: "One",
+        b: "Four",
+        c: "I don't remember",
+        d: "Not enough",
+        correct: "a",
+    },
+    {
+        question: "How are you feeling today?",
+        a: "I feel anxious for some reason",
+        b: "I feel confident and happy!",
+        c: "I feel just fine",
+        d: "I feel good",
         correct: "b",
     },
-
-    { 
-        question: "How can practicing mindfulness contribute to stress reduction?",
-        a: "By ignoring stressful situations",
-        b: "By multitasking to stay busy",
-        c: "By avoiding all challenges",
-        d: "By cultivating awareness and acceptance of the present moment",
-        correct: "d",
+    {
+        question: "What makes you happy?",
+        a: "Sleeping",
+        b: "Spending time with friends & family",
+        c: "Going out for a walk",
+        d: "Reading a book",
+        correct: "b",
     }
 ];
+
+// Targeting the elements specifically
 
 var quiz = document.getElementById('quiz');
 var answerEl = document.querySelectorAll('.answer');
 var questionEl = document.getElementById('question');
+
+// Targeting the answers 
 
 var a_text = document.getElementById('a_text');
 var b_text = document.getElementById('b_text');
@@ -61,10 +49,13 @@ var c_text = document.getElementById('c_text');
 var d_text = document.getElementById('d_text');
 var submitBtn = document.getElementById('submit');
 
+// Variable to track the questions, starting from the first question
+
 var currentQuiz = 0;
-var score = 0;
 
 loadQuiz();
+
+// Creating function to load questions and answers
 
 function loadQuiz() {
     deselectAnswers();
@@ -81,31 +72,36 @@ function loadQuiz() {
 function deselectAnswers() {
     answerEl.forEach(answerInput => answerInput.checked = false);
 }
-
-function getSelected() {
-    var answer;
-    answerEl.forEach(answerInput => {
-        if (answerInput.checked) {
-            answer = answerInput.id;
-        }
-    });
-    return answer;
-}
+// Removed conditioning to choose the right answer
 
 submitBtn.addEventListener('click', () => {
-    var answer = getSelected();
-    if (answer) {
-       if (answer === quizData[currentQuiz].correct) {
-           score++;
-       }
-       currentQuiz++;
-       if (currentQuiz < quizData.length) {
-           loadQuiz();
-       } else {
-           quiz.innerHTML = `
-           <h2>You answered ${score}/${quizData.length} questions correctly</h2>
-           <button onclick="location.reload()">Reload</button>
-           `;
-       }
+    currentQuiz++;
+    if (currentQuiz < quizData.length) {
+        loadQuiz();
+    } else {
+        fetchRandomAdvice();
     }
+    
 });
+
+// Creating function to fetch random advice from API
+
+function fetchRandomAdvice() {
+    fetch("https://api.adviceslip.com/advice")
+        .then(response => response.json())
+        .then(data => {
+
+            // Receiving API response
+
+            var advice = data.slip.advice;
+
+            // Showing result along with random advice
+            
+            quiz.innerHTML = `
+               <p>You've completed the quiz! Here's a random advice for you:</p>
+               <blockquote>${advice}</blockquote>
+               <button onclick="location.reload()">Reload</button>
+            `;
+        })
+        .catch(error => console.error("Error fetching advice:", error));
+}

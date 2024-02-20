@@ -6,7 +6,7 @@
 
 body{
     background-color:bisque;
-    background-image:url("/images/balance-110850_1280.jpg");
+    background-image:url("../images/balance-110850_1280.jpg");
     background-size:cover;
     position:fixed;
 }

@@ -1,3 +1,8 @@
+* {
+    /* background-color: rgb(140, 213, 235); */
+    color: black;
+}
+
 body {
     background-image: url(../images/sunset.jpg);
     background-repeat: no-repeat;
@@ -28,6 +33,7 @@ h1 {
     font-size: 200%;
 }
 
+/* Navigation unordered list */
 nav ul {
     display: flex; 
     justify-content: space-evenly;  
@@ -52,7 +58,8 @@ nav li {
 main {
     display: flex;
     flex-wrap: wrap;
-    padding: 10%;
+    padding: 12%;
+    padding-left: 10%;
 }
 
 section {
@@ -98,4 +105,10 @@ footer {
       width: 100%;
       text-align: center;
     }
+}
+
+@media screen and (min-width: 576px) {
+    main{
+    width: 500px;
+}
 }

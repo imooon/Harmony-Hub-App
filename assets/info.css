@@ -1,3 +1,8 @@
+* {
+  /* background-color: rgb(140, 213, 235); */
+  color: black;
+}
+
 body {
     background-image: url(../images/sunset.jpg);
     background-repeat: no-repeat;
@@ -20,7 +25,6 @@ header {
     align-items: center;
     padding: 1%;
     background-color: rgb(246, 209, 96);
-    color: black;
     z-index: 1000;
 }
   
@@ -43,7 +47,7 @@ nav a {
     text-decoration: none;
 }
 
-/* 20px of spacing between list items */
+/* 20px of spacing between navigation list items in header*/
 nav li {
     margin-right: 20px;
 }
@@ -51,18 +55,19 @@ nav li {
 main {
     display: flex;
     flex-wrap: wrap; 
-    padding: 10%;
-    color: black;
+    padding: 15%;
+    padding-left: 10%; 
 }
 
 section {
     flex: 1 1 0;
     padding-right: 5%;
+    padding-top: 2%;
 } 
 
 h2 {
   margin: 4% 0;
-  padding-top: 5%;
+  padding-top: 1%;
   display: flex;
   flex: 1 1 0;
 }
@@ -85,14 +90,11 @@ footer {
     color: black;
     font-weight: bold;
     border-bottom:0;
- feature/js-workspace2
   }
 
-  /* added style to search widget*/
-  .ui-widget{
+/* Added style to search widget*/
+.ui-widget{
     margin-top:7%;
-  }
-=======
 }
 
 @media screen and (max-width: 768px) {
@@ -109,4 +111,9 @@ footer {
       text-align: center;
     }
 }
- main
+
+@media screen and (min-width: 576px) {
+  main{
+  width: 500px;
+}
+}
