@@ -1,6 +1,8 @@
 * {
+    /* background-color: rgb(140, 213, 235); */
     color: black;
 }
+
 body {
     background-image: url(../images/sunset.jpg);
     background-repeat: no-repeat;
@@ -14,7 +16,7 @@ body {
 }
   
 header {
-    position: fixed;
+    /* position: fixed; */
     left: 0;
     top: 0;
     width: 100%;
@@ -86,7 +88,7 @@ button {
 }
 
 footer {
-    position: fixed;
+    /* position: fixed; */
     left: 0;
     bottom: 0;
     width: 100%;
