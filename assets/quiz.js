@@ -125,9 +125,7 @@ searchBtn.addEventListener('click', () => {
 
     if (searchQuery !== "") {
         fetchAdviceBySearch(searchQuery);
-    } else {
-        alert("Please enter a search query.");
-    }
+    } 
 });
 
 // Function to fetch advice by search query
