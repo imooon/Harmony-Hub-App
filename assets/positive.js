@@ -28,19 +28,29 @@
 //   showPicture();
 // });
 
+
+
+
 // Function to save message to local storage 
-function saveData() {
-    var inputData = document.getElementById('message').value;
-    localStorage.setItem('savedData', inputData);
-    displayData();
-}
+// function saveData() {
+//     var inputData = document.getElementById('message').value;
+//     localStorage.setItem('savedData', inputData);
+//     displayData();
+// }
 
-// Function to display saved message
-function displayData() {
-    var savedData = localStorage.getItem('savedData');
-    var displayDiv = document.getElementById('savedData');
-    displayDiv.textContent = savedData;
-}
+// // Function to display saved message
+// function displayData() {
+//     var savedData = localStorage.getItem('savedData');
+//     var displayDiv = document.getElementById('savedData');
+//     displayDiv.textContent = savedData;
+// }
 
-// Calls displayData function to display the message input on Positivity Board page
-displayData();
+// // Calls displayData function to display the message input on Positivity Board page
+// displayData();
+
+var comment = document.getElementById("message");
+var saveButton = document.getElementById("save");
+
+function saveLastMessage() {
+  var
+}
