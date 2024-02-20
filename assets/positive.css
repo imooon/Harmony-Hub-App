@@ -1,3 +1,8 @@
+* {
+    /* background-color: rgb(140, 213, 235); */
+    color: black;
+}
+
 body {
     background-image: url(../images/sunset.jpg);
     background-repeat: no-repeat;
@@ -11,7 +16,7 @@ body {
 }
   
 header {
-    position: fixed;
+    /* position: fixed; */
     left: 0;
     top: 0;
     width: 100%;
@@ -20,7 +25,6 @@ header {
     align-items: center;
     padding: 1%;
     background-color: rgb(246, 209, 96);
-    color: black;
 }
   
 h1 {
@@ -35,7 +39,6 @@ nav ul {
     list-style-type: none;
     padding: 10px;
     margin: 10px;
-    color:black;
 }
 
 nav a {
@@ -45,13 +48,13 @@ nav a {
 /* 20px of spacing between list items */
 nav li {
     margin-right: 20px;
-    color: black;
 }
 
 main {
     display: flex;
     flex-wrap: wrap;
-    padding: 10%;
+    padding: 15%;
+    padding-left: 10%;
 }
 
 section {
@@ -75,8 +78,17 @@ p {
   font-family: 'Caveat',  'Roboto';
 } */
 
+button {
+   display: flex;
+   /* vertical-align: bottom; */
+}
+
+#savedData {
+    padding-top: 3%;
+}
+
 footer {
-    position: fixed;
+    /* position: fixed; */
     left: 0;
     bottom: 0;
     width: 100%;
@@ -84,14 +96,14 @@ footer {
     justify-content: center;
     padding: 1%;
     background-color: rgb(246, 209, 96);
-    color: black;
     font-weight: bold;
     border-bottom:0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     header,
-    main {
+    main,
+    button {
       flex-direction: column;
     }
   
@@ -101,4 +113,40 @@ footer {
       width: 100%;
       text-align: center;
     }
+}
+
+@media screen and (max-width: 768px) {
+    header,
+    main,
+    button {
+      flex-direction: column;
+    }
+  
+    section {
+      padding-right: 0;
+      margin-top: 30%;
+      width: 100%;
+      text-align: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    header,
+    main,
+    button {
+      flex-direction: column;
+    }
+  
+    section {
+      padding-right: 0;
+      margin-top: 30%;
+      width: 100%;
+      text-align: center;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    main{
+    width: 500px;
+}
 }
