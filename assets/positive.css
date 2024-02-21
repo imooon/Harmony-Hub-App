@@ -1,8 +1,9 @@
+/* Universal black text unless otherwise specified */
 * {
-    /* background-color: rgb(140, 213, 235); */
     color: black;
 }
 
+/* Body styling and image set to cover page */
 body {
     background-image: url(../images/sunset.jpg);
     background-repeat: no-repeat;
@@ -14,9 +15,10 @@ body {
     font-family: 'Caveat', 'Roboto';
     font-size: 22px;
 }
-  
+
+/* Header fixed to top of page and color set */
 header {
-    /* position: fixed; */
+    position: fixed; 
     left: 0;
     top: 0;
     width: 100%;
@@ -25,6 +27,7 @@ header {
     align-items: center;
     padding: 1%;
     background-color: rgb(246, 209, 96);
+    flex-shrink: 0;
 }
   
 h1 {
@@ -45,7 +48,8 @@ nav a {
     font-weight: bold; 
     text-decoration: none;
 }
-/* 20px of spacing between list items */
+
+/* 20px of spacing between navigation list items */
 nav li {
     margin-right: 20px;
 }
@@ -53,18 +57,19 @@ nav li {
 main {
     display: flex;
     flex-wrap: wrap;
-    padding: 15%;
+    padding: 10%;
     padding-left: 10%;
 }
 
 section {
     flex: 1 1 0;
     padding-right: 5%;
+    padding-top: 10px;
 } 
 
 h2 {
     margin: 4% 0;
-    padding-top: 5%;
+    padding-top: 1%;
     display: flex;
     flex: 1 1 0;
 }
@@ -74,21 +79,70 @@ p {
   font-size: 110%;
 }
 
-/* #message {
-  font-family: 'Caveat',  'Roboto';
-} */
-
-button {
-   display: flex;
-   /* vertical-align: bottom; */
+label {
+  border-radius: 18px;
 }
 
 #savedData {
     padding-top: 3%;
 }
 
+/* 'Save' button styling with cursor pointer and rounded corners */
+button {
+    background-color: black;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+    letter-spacing: 0.21px;
+    line-height: 8px;
+    max-width: 255px;
+    padding: 15px 40px;
+    text-align: right;
+    transition-duration: 0.15s;
+    transition-property: background-color;
+    transition-timing-function: linear;
+    margin: 0.2em;
+    display: flex;
+  }
+ 
+/* Styling for saved message box */
+.card {
+    background-color: rgb(243, 183, 223);
+    border: 2px solid #eceff1;
+    border-radius: 8px;
+    box-shadow: rgba(60, 64, 67, 2) 0 1px 2px 0,
+      rgba(60, 64, 67, 0.15) 0 2px 4px 3px;
+    margin: 30px 20px;
+    padding: 20px;
+    width: 30vw; 
+    height: 20vw;
+    margin-left: 60%;
+    margin-top: -40%;
+}
+  
+.card::after {
+    content: " ";
+    display: block;
+    clear: both;
+}  
+
+.positive-message {
+    text-align: center;
+    margin-top: -3px;
+}
+
+#msg {
+    display: block;
+    min-height: 100px;
+    width: 100%;
+    margin-top: 10px;
+    background-color: whitesmoke;
+}
+
+/* Footer fixed to top of page and color set  */
 footer {
-    /* position: fixed; */
+    position: fixed; 
     left: 0;
     bottom: 0;
     width: 100%;
@@ -100,11 +154,19 @@ footer {
     border-bottom:0;
 }
 
+/* Media query added to accomodate different screen sizes */
 @media screen and (max-width: 992px) {
-    header,
+    header {
+        margin-top: 0;
+        margin-left: 0;
+    }
+
     main,
-    button {
+    h2 {
       flex-direction: column;
+      width: 100%;
+      margin-top: 10px;
+      margin-left: 10px;
     }
   
     section {
@@ -112,29 +174,75 @@ footer {
       margin-top: 30%;
       width: 100%;
       text-align: center;
+    }
+
+    .card {
+      margin-top: 10px;
+      margin-left: 10px;
+    }
+
+    button {
+        font-size: 1em;
+    } 
+    
+    .card {
+        flex-direction: column;
     }
 }
 
 @media screen and (max-width: 768px) {
-    header,
-    main,
-    button {
+    header {
+      /* position: fixed; */
       flex-direction: column;
+      margin-top: 0;
+      margin-left: 0;
     }
+    /* main {
+      flex-direction: column;
+      font-size: smaller;
+      width: 100%;
+      padding: 10px;
+    } */
   
     section {
       padding-right: 0;
       margin-top: 30%;
       width: 100%;
       text-align: center;
+      padding: 10;
+      padding-top: 12px;
     }
+
+    h2 {
+        /* font-size: smaller;*/
+        width: 90%;
+        padding: 10px;
+        padding-top: 10px;
+    } 
+
+    button {
+        font-size: 1em;
+    } 
+
+    .card {
+        flex-direction: column;
+        padding: 10px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
 }
 
 @media screen and (max-width: 576px) {
-    header,
-    main,
-    button {
+    header {
+        flex-direction: column;
+    }
+
+    main {
       flex-direction: column;
+      font-size: smaller;
+      width: 100%;
+      
     }
   
     section {
@@ -142,11 +250,33 @@ footer {
       margin-top: 30%;
       width: 100%;
       text-align: center;
+      margin-top: 10px;
+        margin-left: 10px;
+    }
+    
+    h2 {
+      width: 90%;
+      flex-direction: column;
+      width: 100%;
+      margin-top: 10px;
+      margin-left: 10px;
+    }
+
+    button {
+        font-size: 1em;
+        flex-direction: row;
+        width: 100%;
+        /* margin-bottom: 20px; */
+    } 
+
+    .card {
+        flex-direction: row;
+        width: 100%;
+        /* margin-bottom: 20px; */
+    }
+
+    footer {
+        font-size: medium;
     }
 }
 
-@media screen and (min-width: 576px) {
-    main{
-    width: 500px;
-}
-}
