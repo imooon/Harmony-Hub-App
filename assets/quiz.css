@@ -209,8 +209,16 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+    h1 {
+        font-size: larger;
+    }
+    
     body {
         margin: 8px;
+    }
+
+    nav a {
+        font-size: small;
     }
     
     #subpages {
@@ -247,9 +255,22 @@ footer {
     #submit {
         font-size: 1rem;
     }
+
+    footer {
+        font-size: medium;
+    }
 }
 
 @media screen and (max-width: 576px) {
+    
+    h1 {
+        font-size: x-large;
+    }
+
+    nav a {
+        font-size: smaller;
+    }
+    
     #heading {
         text-align: center;
     }
@@ -264,5 +285,6 @@ footer {
 
     footer {
         padding: 2%; 
+        font-size: smaller;
     }
 }
