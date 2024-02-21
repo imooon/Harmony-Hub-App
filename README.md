@@ -62,6 +62,14 @@ Harmony-Hub: A feel-good wellness application!
 
 - On the about us and Contact page the user will see blurbs about each developer and their contact information.
 
+## URL of the GitHub repository
+
+https://github.com/imooon/Harmony-Hub-App)
+
+## URL of the deployed application
+
+https://imooon.github.io/Harmony-Hub-App/)
+
 - ![Screenshot of the home page open in browser](./images/screenshot-1.png)
 
 - ![Screenshot of the main page open in browser](./images/screenshot-2.png)
@@ -88,7 +96,6 @@ Harmony-Hub: A feel-good wellness application!
 
 - ![Screenshot of the about/contact us page open in browser](./images/contact.png)
 
-- [x][y]
 
 # Credits
 
@@ -113,6 +120,18 @@ Spotify. (n.d.). Spotify API. https://developer.spotify.com/
 University of Toronto. (2023). Coding Boot Camp [Source Code].
 
 W3Schools. (n.d.). HTML Background Images. https://www.w3schools.com/html/html_images_background.asp
+
+Coding with Nick. (2021, September, 6). Create a Quiz App using HTML, CSS, JavaScript. https://codingwithnick.in/create-a-quiz-app-using-html-css-javascript/
+
+Bro Code. (2023, December 28). How to FETCH data from an API using JavaScript [Video]. YouTube. https://www.youtube.com/watch?v=CqddbIrEM5I
+
+CSS Gradient. (n.d.). Ultimate CSS Gradient Generator. https://cssgradient.io/
+
+Nidharia, Imon. (2015). Background image for Quiz.
+
+Advice Slip. (n.d.). Advice Slip API. https://api.adviceslip.com/#top
+
+Oston Code Cypher. (2021, May 29). Display Random Advice On Your  Website or  Web App Using Advice Slip JSON API. YouTube. https://youtu.be/2AfzKmgqWUE?feature=shared
 
 ## Licence 
 
