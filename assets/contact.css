@@ -6,12 +6,11 @@
 
 body {
     background: linear-gradient(50deg, rgb(155, 126, 90), rgb(15, 14, 1));
-    min-height: 100vh; /* Use min-height to ensure the body covers the viewport height */
-    display: flex;
+    min-height: 100vh; /    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow-x: hidden; /* Prevent horizontal overflow */
+    overflow-x: hidden; /* Prevents horizontal overflow */
 }
 
 .aboutUs  {
@@ -37,6 +36,7 @@ body {
     margin-top: 50px;
 }
 
+
 .Names {
     flex: 1; /* Allow items to grow and fill available space */
     border: 1px solid rgb(97, 59, 59);
@@ -50,8 +50,8 @@ body {
     flex: 1; /* Allow items to grow and fill available space */
     border: 1px solid rgb(97, 59, 59);
     padding: 20px;
-    margin: 10px; /* Add margin between items */
-    width: 30%; /* Set width for each item */
+    margin: 10px;
+    width: 30%; 
     max-width: calc(50% - 70px); /* Set maximum width for each item to prevent overflow */
 }
 
@@ -74,7 +74,7 @@ body {
 
 
 .contactUs {
-    margin-top: 70px; /* Adjust spacing between sections */
+    margin-top: 70px; /* To Adjust spacing between sections */
 }
 
 /* Styling for the home button */
@@ -97,3 +97,98 @@ body {
     margin-left: auto;
 }
 
+
+/* media query per screen*/
+
+@media screen and (max-width: 576px) {
+    .Contact{
+        max-width:100px;
+        padding:8px;
+        border:10px;
+        
+    }
+
+
+    .contactUs{
+        
+        font-size:10px;
+            max-width:100%;
+            padding:20px;
+    }
+    .ContactInfo{
+       
+        width:100%;
+        padding:3px;
+    }
+    
+    .Btnhome{
+        font-size:35px;
+      }
+      h2{
+        font-size:large;
+    }
+    
+
+    
+    .Btnhome{
+        font-size:45px;
+      }
+}
+
+@media screen and (max-width: 414px){
+    .Contact{
+        max-width:100px;
+        padding:15px;
+        border:10px;
+        
+    }
+
+
+    .contactUs{
+        
+        font-size:10px;
+            max-width:100%;
+            padding:20px;
+    }
+    .ContactInfo{
+       
+        width:100%;
+        padding:1px;
+    }
+    
+    .Btnhome{
+        font-size:35px;
+      }
+      h2{
+        font-size:large;
+    }
+    }
+
+    @media screen and (max-width: 320px) {
+    
+    
+        .contactUs{
+            font-size:10px;
+            max-width:100%;
+            padding:10px;
+        }
+        h2{
+            font-size:large;
+        }
+    .Contact{
+        max-width:800px;
+        padding:15px;
+        border:10px;
+        
+    }
+
+    .ContactInfo{
+       
+        width:100%;
+        padding:10px;
+    }
+
+  .Btnhome{
+    font-size:20px;
+  }
+}

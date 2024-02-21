@@ -42,14 +42,15 @@ body{
 }
 
 
+/*media query for each screen size*/
+
+
 @media screen and (max-width: 414px){
 body{
     width:fit-content;
 
 }
-h3{
 
-}
     
 }
 
