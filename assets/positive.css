@@ -70,7 +70,7 @@ section {
 
 h2 {
     margin: 4% 0;
-    padding-top: 1%;
+    padding-top: 3%;
     display: flex;
     flex: 1 1 0;
 }
@@ -81,7 +81,7 @@ p {
 }
 
 label {
-  border-radius: 18px;
+  /* border-radius: 18px; */
 }
 
 #savedData {
