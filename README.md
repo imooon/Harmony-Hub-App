@@ -31,11 +31,11 @@ As a purchaser on the website I want the ability to pay with a credit card, so t
 
 - The target audience for this website is anyone interested in promoting wellness, positivity and happiness in their life. 
 
-- To create this website HTML, CSS, JavaScript, Google Fonts and APIS were utilized. Spotify and API's were specifically used. 
+- To create this website HTML, CSS, JavaScript, Google Fonts and APIS were utilized. More, specifically, Spotify and Advice Slip API's were used. 
 
 - A number of challenges were faced while making this project. Managing the GitHub repository while following best practices was one of the initial issues faced and continued throughout the project. Creating branches, merging branches and completing pull requests caused some errors. 
 
-- Challeneges were faced when implementing JavaScript in order to obtain user interactivity. Implementing functions was at times difficult and a group effort. 
+- Challenges were faced when implementing JavaScript in order to obtain user interactivity. Implementing functions was at times difficult and a group effort. 
 
 - Challenges were also faced when implementing media queries to accomodate various screen sizes, especially smaller screens, ie. tablets and phones. 
 

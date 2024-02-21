@@ -65,12 +65,11 @@ main {
 section {
     flex: 1 1 0;
     padding-right: 5%;
-    /* display: inline-block; */
 } 
 
 h2 {
   margin: 4% 0; 
-  padding-top: 5%; 
+  padding-top: 10%; 
   display: flex;
   flex: 1 1 0;
 }

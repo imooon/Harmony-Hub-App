@@ -1,6 +1,5 @@
 /* Universal black text unless otherwise specified */
 * {
-    /* background-color: rgb(140, 213, 235); */
     color: black;
 }
 
@@ -28,6 +27,7 @@ header {
     align-items: center;
     padding: 1%;
     background-color: rgb(246, 209, 96);
+    flex-shrink: 0;
 }
   
 h1 {
@@ -49,7 +49,7 @@ nav a {
     text-decoration: none;
 }
 
-/* 20px of spacing between nnavigation list items */
+/* 20px of spacing between navigation list items */
 nav li {
     margin-right: 20px;
 }
@@ -64,11 +64,12 @@ main {
 section {
     flex: 1 1 0;
     padding-right: 5%;
+    padding-top: 10px;
 } 
 
 h2 {
     margin: 4% 0;
-    padding-top: 5%;
+    padding-top: 1%;
     display: flex;
     flex: 1 1 0;
 }
@@ -97,14 +98,14 @@ button {
     line-height: 8px;
     max-width: 255px;
     padding: 15px 40px;
-    text-align: left;
+    text-align: right;
     transition-duration: 0.15s;
     transition-property: background-color;
     transition-timing-function: linear;
     margin: 0.2em;
     display: flex;
   }
-
+ 
 /* Styling for saved message box */
 .card {
     background-color: rgb(243, 183, 223);
@@ -114,10 +115,10 @@ button {
       rgba(60, 64, 67, 0.15) 0 2px 4px 3px;
     margin: 30px 20px;
     padding: 30px;
-    width: 30vw;
+    width: 30vw; 
     height: 20vw;
     display: inline-block;
-    justify-content: center;
+    justify-content: center; 
 }
   
 .card::after {
@@ -159,6 +160,7 @@ footer {
     main,
     button {
       flex-direction: column;
+      width: 100%;
     }
   
     section {
@@ -167,13 +169,23 @@ footer {
       width: 100%;
       text-align: center;
     }
+
+    h2 {
+        /* font-size: medium; */
+        width: 90%;
+        }
+
+    button {
+        font-size: 1em;
+    }    
 }
 
 @media screen and (max-width: 768px) {
     header,
-    main,
-    button {
+    main {
       flex-direction: column;
+      font-size: smaller;
+      width: 100%;
     }
   
     section {
@@ -182,13 +194,24 @@ footer {
       width: 100%;
       text-align: center;
     }
+
+    h2 {
+        /* font-size: smaller; */
+        width: 90%;
+    }
+
+    button {
+        font-size: 1em;
+    } 
 }
 
 @media screen and (max-width: 576px) {
     header,
-    main,
-    button {
+    main {
       flex-direction: column;
+      font-size: smaller;
+      width: 100%;
+      /* font-size: smaller; */
     }
   
     section {
@@ -196,17 +219,20 @@ footer {
       margin-top: 30%;
       width: 100%;
       text-align: center;
+      /* font-size: medium; */
+    }
+    
+    h2 {
+    /* font-size: medium; */
+    width: 90%;
+    }
+
+    button {
+        font-size: 1em;
+    } 
+
+    footer {
+        font-size: medium;
     }
 }
 
-@media screen and (min-width: 576px) {
-    main{
-    width: 500px;
-    }
-}
-
-/* @media only screen and (max-width: 800px) {
-    .card {
-      width: 80vw;
-    }
-  }  */
