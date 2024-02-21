@@ -10,18 +10,7 @@ Harmoney-Hub: A feel-good wellness application!
 
 # Description
 
-- As a user interested in wellness I want to learn about and promote wellness in my life so that I achieve happiness and relieve stress. End user goal: Find various tools all on one webpage to interact with and learn from to promote happiness and relieve stress. 
-
-
-
-As a [type of user], I want [goal] so that I [receive benefit]. End user goal: _______________________________ End business goal: _____________________________ Acceptance criteria: * product defines any initial functionality requirements they can think of * this is a loose outline that will be finalized through wireframes, flows and discussions * acceptance criteria must be finalized before dev starts 
-
-Example User Story:
-As a purchaser on the website I want the ability to pay with a credit card, so that I may immediately confirm my purchase. End user goal: Purchase items with a credit card End business goal: Increase purchases Acceptance criteria: * Accept Discover, Visa, MC * Validate credit card number * Validate expiration data and CVV * Validate billing address * Generate success/failure messages after processing 
-
-
-
-
+- As a user interested in wellness and feeling good I want to be able to go on a website and access a variety of different resources. Acceptance Criteria: Find various tools all on one webpage to interact with to feel good and aid in wellness.
 
 - The motivation for this project was to create a website where users can access a variety of tools to aid in feeling good and support their wellness. 
 
@@ -34,6 +23,8 @@ As a purchaser on the website I want the ability to pay with a credit card, so t
 - To create this website HTML, CSS, JavaScript, Google Fonts and APIS were utilized. More, specifically, Spotify and Advice Slip API's were used. 
 
 - A number of challenges were faced while making this project. Managing the GitHub repository while following best practices was one of the initial issues faced and continued throughout the project. Creating branches, merging branches and completing pull requests caused some errors. 
+
+- Challenges arose for all members when trying to implement the YouTube API and all members were unsuccessful. 
 
 - Challenges were faced when implementing JavaScript in order to obtain user interactivity. Implementing functions was at times difficult and a group effort. 
 
@@ -59,7 +50,7 @@ As a purchaser on the website I want the ability to pay with a credit card, so t
 
 - Once on the main page users have a choice of which page they would like to choose next. 
 
-- On the quiz page the user can opt to answer self-assessment questions or not and they will be brought to a page which uses an API to randomly generate quotes. 
+- On the quiz page the user can opt to answer self-assessment questions and reflect on their mood and day, or not, and then they will be brought to a page which uses an API to randomly generate quotes. At the end of the quiz the user will also be given the option to search for any type of advice. 
 
 - The sounds page offers a drop down menu where the user can select a sound from nine choices. They will then be given seven options to choose from which are 29 seconds in length. 
 
@@ -84,7 +75,11 @@ As a purchaser on the website I want the ability to pay with a credit card, so t
 
 - ![Screenshot of the main page open in browser]()
 
-- [x](y)
+- ![Screenshot of the positivity page open in browser](./images/screenshot-6.png)
+
+- ![Screenshot of the main page open in browser]()
+
+- [x][y]
 
 # Credits
 
@@ -102,6 +97,8 @@ Robinson, L. & Smith, M. (2023, November 8). How to Fall Asleep Fast and Sleep B
 
 Robinson, L. & Smith, M. (2024, January 9). Stress Management: How to Reduce and Relieve Stress. HelpGuide.org. https://www.helpguide.org/articles/stress/stress-management.htm
 
+Spotify. (n.d.). Spotify API. https://developer.spotify.com/
+
 University of Toronto. (2023). Coding Boot Camp [Source Code].
 
 W3Schools. (n.d.). HTML Background Images. https://www.w3schools.com/html/html_images_background.asp
@@ -109,4 +106,5 @@ W3Schools. (n.d.). HTML Background Images. https://www.w3schools.com/html/html_i
 ## Licence 
 
 - MIT License
+
 - Please refer to the MIT License in the repository for detailed information.

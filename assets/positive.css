@@ -57,7 +57,7 @@ nav li {
 main {
     display: flex;
     flex-wrap: wrap;
-    padding: 15%;
+    padding: 10%;
     padding-left: 10%;
 }
 
@@ -87,7 +87,7 @@ label {
     padding-top: 3%;
 }
 
-/* 'Save' button styling with cursor pointer and rounded corners*/
+/* 'Save' button styling with cursor pointer and rounded corners */
 button {
     background-color: black;
     border-radius: 8px;
@@ -114,11 +114,11 @@ button {
     box-shadow: rgba(60, 64, 67, 2) 0 1px 2px 0,
       rgba(60, 64, 67, 0.15) 0 2px 4px 3px;
     margin: 30px 20px;
-    padding: 30px;
+    padding: 20px;
     width: 30vw; 
     height: 20vw;
-    display: inline-block;
-    justify-content: center; 
+    margin-left: 60%;
+    margin-top: -40%;
 }
   
 .card::after {
@@ -158,9 +158,11 @@ footer {
 @media screen and (max-width: 992px) {
     header,
     main,
-    button {
+    h2 {
       flex-direction: column;
       width: 100%;
+      margin-top: 10px;
+      margin-left: 10px;
     }
   
     section {
@@ -170,22 +172,34 @@ footer {
       text-align: center;
     }
 
-    h2 {
-        /* font-size: medium; */
+    .card {
+      margin-top: 10px;
+      margin-left: 10px;
+    }
+
+    /* h2 {
+        font-size: medium; 
         width: 90%;
-        }
+        } */
 
     button {
         font-size: 1em;
-    }    
+    } 
+    
+    .card {
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 768px) {
-    header,
+    header {
+      flex-direction: column;
+    }
     main {
       flex-direction: column;
       font-size: smaller;
       width: 100%;
+      padding: 10px;
     }
   
     section {
@@ -193,25 +207,39 @@ footer {
       margin-top: 30%;
       width: 100%;
       text-align: center;
+      padding: 10;
+      padding-top: 10px;
     }
 
     h2 {
         /* font-size: smaller; */
         width: 90%;
+        padding: 10px;
+        padding-top: 10px;
     }
 
     button {
         font-size: 1em;
     } 
+
+    .card {
+        flex-direction: column;
+        padding: 10px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
 }
 
 @media screen and (max-width: 576px) {
-    header,
+    header {
+        flex-direction: column;
+    }
     main {
       flex-direction: column;
       font-size: smaller;
       width: 100%;
-      /* font-size: smaller; */
+      
     }
   
     section {
@@ -219,17 +247,31 @@ footer {
       margin-top: 30%;
       width: 100%;
       text-align: center;
-      /* font-size: medium; */
+      margin-top: 10px;
+        margin-left: 10px;
     }
     
     h2 {
-    /* font-size: medium; */
-    width: 90%;
+      width: 90%;
+      flex-direction: column;
+      width: 100%;
+      margin-top: 10px;
+        margin-left: 10px;
+    /* margin-bottom: 20px; */
     }
 
     button {
         font-size: 1em;
+        flex-direction: row;
+        width: 100%;
+        /* margin-bottom: 20px; */
     } 
+
+    .card {
+        flex-direction: row;
+        width: 100%;
+        /* margin-bottom: 20px; */
+    }
 
     footer {
         font-size: medium;
