@@ -1,5 +1,5 @@
 # Harmony-hub
-Harmoney-Hub: A feel-good wellness application!
+Harmony-Hub: A feel-good wellness application!
 
 ## Table of Contents 
 
@@ -72,17 +72,21 @@ Harmoney-Hub: A feel-good wellness application!
 
 - ![Screenshot of the quiz page open in browser after searching for more advice](./images/screenshot-5.png)
 
-- ![Screenshot of the sounds page open in browser]()
+- ![Screenshot of the sounds page open in browser](./images/songs.png)
 
-- ![Screenshot of the videos page open in browser]()
+- ![Screenshot of the sounds page open in browser with the drop down menu open](./images/songs_lists.png)
 
-- ![Screenshot of the information board page page open in browser]()
+- ![Screenshot of the sounds page open in browser with the song results ](./images/song_results.png)
+
+- ![Screenshot of the videos page open in browser](./images/videos.png)
+
+- ![Screenshot of the information board page page open in browser](./images/info.png)
 
 - ![Screenshot of the positivity board page open in browser](./images/screenshot-6.png)
 
 - ![Screenshot of the positivity board page open in browser with saved positive message](./images/screenshot-7.png)
 
-- ![Screenshot of the about/contact us page open in browser]()
+- ![Screenshot of the about/contact us page open in browser](./images/contact.png)
 
 - [x][y]
 
