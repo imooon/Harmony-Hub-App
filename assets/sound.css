@@ -12,16 +12,16 @@ body {
   
 header {
     
-    left: 0;
-    top: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1%;
-    color: black;
-    background-color: rgb(246, 209, 96);
+ margin-top:20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 3px;
+  background-color: rgb(246, 209, 96);
+  color: black;
 }
+
   
 h1 {
     font-size: 200%;
@@ -33,7 +33,7 @@ nav ul {
     min-width: 300px;
     list-style-type: none;
     padding: 10px;
-    margin: 10px;
+    margin-top: 20px;
 }
 
 nav a {
@@ -47,6 +47,7 @@ nav a {
 /* 20px of spacing between list items */
 nav li {
     margin-right: 20px;
+    display:inline-block;
 }
 
 main {
@@ -98,7 +99,9 @@ label{
     margin-right:10px;
 }
 
-
+#selectOptions{
+  margin-bottom:20px;
+}
 
 
 #result{
@@ -112,21 +115,6 @@ text-align:center;
 }
 
 
-.album img{
-width:100%;
-border-radius: 8px;
-}
-
-.album h2{
-    margin-top:10px;
-    margin-bottom:5px;
-    font-size:18px;
-}
-
-.album p {
-    color:black;
-    font-size:15px;
-}
 
 .track-audio {
     width: 100%; 
@@ -262,7 +250,7 @@ button {
   /* Styles for very small screens such as phones (320px and below) */
   @media only screen and (max-width: 320px) {
     header {
-        padding: 2px;
+        padding-bottom: 150px;
         
     }
     body {
@@ -270,7 +258,7 @@ button {
       font-size: 50px; 
       padding: 2px;
     } 
-}
+
     .playList {
       width: 100%; 
       margin: 0; 
@@ -289,5 +277,16 @@ button {
         width: 90%; 
         height: auto;
     }
-  
+  h1 {
+      font-size: 20px; 
+  }
+
+   nav ul{
+      margin-top: 15px;
+  }
+
+ nav li {
+      margin-right: 5px; 
+  }
+
 }
