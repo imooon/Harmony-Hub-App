@@ -120,3 +120,68 @@ function positivePage(){
 
 
 
+// Function to toggle the visibility of the navigation menu
+function toggleMenu() {
+    var nav = document.getElementById("menu");
+    if (nav.style.display === "block") {
+        nav.style.display = "none";
+    } else {
+        nav.style.display = "block";
+    }
+}
+
+
+// Add event listener for menu toggle button click
+document.getElementById("menu-toggle").addEventListener("click", toggleMenu);
+
+// Add event listener for window resize event
+window.addEventListener("resize", handleResize);
+
+
+handleResize();
+
+// Add event listener for DOMContentLoaded event
+document.addEventListener("DOMContentLoaded", function() {
+    // Add event listener for menu toggle button click (inside DOMContentLoaded)
+    document.getElementById("menu-toggle").addEventListener("click", toggleMenu);
+});
+
+
+// Function to handle window resize event
+function handleResize() {
+    var menuToggle = document.getElementById("menu-toggle");
+    var nav = document.getElementById("menu");
+
+    if (window.innerWidth <= 414) {
+        menuToggle.style.display = "block"; 
+        nav.style.display = "none"; 
+    } else if (window.innerWidth <= 576) {
+        menuToggle.style.display = "block";
+        nav.style.display = "none"; 
+    } else if (window.innerWidth <= 768) {
+        menuToggle.style.display = "block"; 
+        nav.style.display = "none"; 
+    } else if (window.innerWidth <= 992) {
+        menuToggle.style.display = "block"; 
+        nav.style.display = "none"; 
+    } else {
+        menuToggle.style.display = "none"; 
+        nav.style.display = "block"; 
+    }
+}
+
+
+// Add event listener for menu toggle button click
+document.getElementById("menu-toggle").addEventListener("click", toggleMenu);
+
+// Add event listener for window resize event
+window.addEventListener("resize", handleResize);
+
+handleResize();
+
+// Add event listener for DOMContentLoaded event
+document.addEventListener("DOMContentLoaded", function() {
+    // Add event listener for menu toggle button click (inside DOMContentLoaded)
+    document.getElementById("menu-toggle").addEventListener("click", toggleMenu);
+});
+
