@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google fonts api list -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/positive.css" />
-    <title>Feel Good App</title>
+    <title>Harmony Hub</title>
 </head>
 
 <body>
+  <!-- Header for Harmoney Hub and unordered navigation list of pages -->
   <header>
     <h1>Harmony Hub</h1>
     <nav>
@@ -33,16 +35,16 @@
         <h2>Positivity Board</h2>
         <p>We invite you to leave a comment on our Positivity Board! Let us know how your day is going, leave a kind message, a funny joke, words of encouragement or a thank you.</p>
         <label for="message">Leave your message here:</label>
-        <br><textarea type=text id="message" rows="10" cols="40" placeholder="Enter text here..."></textarea> </textarea>
-        <button onClick="saveData()">Save</button> 
+        <br><textarea type=text id="message" rows="20" cols="40" placeholder="Enter text here..."></textarea> </textarea>
+        <button id="save" onClick="saveData()">Save</button> 
         <div id="savedData"></div>
       </article>
-      <div class="card">
-        <h2 class="positive-message">Positive Message</h2>
-        <p><span id="saved-message"></span></p>
-        <!-- <p>Grade: <span id="saved-grade"></span></p>
-        <p>Comment: <span id="saved-comment"></span></p> -->
-      </div>
+      <article>
+        <div class="card">
+          <h2 class="positive-message">Positive Message!</h2>
+          <p><span id="saved-message"></span></p>
+        </div>
+      </article>
     </section>
   </main>
 
@@ -51,7 +53,6 @@
   </footer>
 
   <script src="assets/positive.js"> </script>
-  <script src="assets/zenquote.js"> </script>
 
 </body>
 
