@@ -7,7 +7,7 @@ var quizData = [
         b: "Just another day...",
         c: "Today is definitely not my day",
         d: "The day just started, I feel good!",
-        correct: "c",
+        // correct: "c",
     },
     {
         question: "How many glasses of water did you drink today?",
@@ -15,7 +15,7 @@ var quizData = [
         b: "Four",
         c: "I don't remember",
         d: "Not enough",
-        correct: "a",
+        // correct: "a",
     },
     {
         question: "How are you feeling today?",
@@ -23,7 +23,7 @@ var quizData = [
         b: "I feel confident and happy!",
         c: "I feel just fine",
         d: "I feel good",
-        correct: "b",
+        // correct: "b",
     },
     {
         question: "What makes you happy?",
@@ -31,7 +31,7 @@ var quizData = [
         b: "Spending time with friends & family",
         c: "Going out for a walk",
         d: "Reading a book",
-        correct: "b",
+        // correct: "b",
     }
 ];
 
@@ -48,6 +48,11 @@ var b_text = document.getElementById('b_text');
 var c_text = document.getElementById('c_text');
 var d_text = document.getElementById('d_text');
 var submitBtn = document.getElementById('submit');
+
+// Targeting the search elements
+var searchContainer = document.getElementById('searchContainer');
+var adviceSearchInput = document.getElementById('adviceSearch');
+var searchBtn = document.getElementById('searchBtn');
 
 // Variable to track the questions, starting from the first question
 
@@ -72,6 +77,7 @@ function loadQuiz() {
 function deselectAnswers() {
     answerEl.forEach(answerInput => answerInput.checked = false);
 }
+
 // Removed conditioning to choose the right answer
 
 submitBtn.addEventListener('click', () => {
@@ -80,8 +86,8 @@ submitBtn.addEventListener('click', () => {
         loadQuiz();
     } else {
         fetchRandomAdvice();
+        showSearchButton();
     }
-    
 });
 
 // Creating function to fetch random advice from API
@@ -105,3 +111,44 @@ function fetchRandomAdvice() {
         })
         .catch(error => console.error("Error fetching advice:", error));
 }
+
+// Created function to show the search button
+
+function showSearchButton() {
+    searchContainer.style.display = 'block';
+}
+
+// Added event listener to the search button
+
+searchBtn.addEventListener('click', () => {
+    var searchQuery = adviceSearchInput.value.trim();
+
+    if (searchQuery !== "") {
+        fetchAdviceBySearch(searchQuery);
+    } 
+});
+
+// Function to fetch advice by search query
+function fetchAdviceBySearch(query) {
+    var searchUrl = `https://api.adviceslip.com/advice/search/${query}`;
+
+    fetch(searchUrl)
+        .then(response => response.json())
+        .then(data => {
+            var advice = data.slips[0].advice;
+
+            // Displaying the searched advice
+            quiz.innerHTML = `
+               <p>Here's an advice based on your search:</p>
+               <blockquote>${advice}</blockquote>
+               <button onclick="location.reload()">Reload</button>
+            `;
+
+            // Hide the search container
+            searchContainer.style.display = 'none';
+        })
+        .catch(error => console.error("Error fetching advice:", error));
+}
+
+// Hiding the search container initially
+searchContainer.style.display = 'none';
