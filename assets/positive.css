@@ -105,18 +105,19 @@ button {
     display: flex;
   }
 
-  /* Styling for saved message box */
+/* Styling for saved message box */
 .card {
-    background-color: rgb(232, 161, 218);
+    background-color: rgb(243, 183, 223);
     border: 2px solid #eceff1;
     border-radius: 8px;
     box-shadow: rgba(60, 64, 67, 2) 0 1px 2px 0,
       rgba(60, 64, 67, 0.15) 0 2px 4px 3px;
     margin: 30px 20px;
-    padding: 20px;
+    padding: 30px;
     width: 30vw;
     height: 20vw;
     display: inline-block;
+    justify-content: center;
 }
   
 .card::after {

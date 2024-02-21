@@ -1,10 +1,9 @@
 # Harmony-hub
-A feel-good wellness application!
+Harmoney-Hub: A feel-good wellness application!
 
 ## Table of Contents 
 
 - Description
-- Installation
 - Usage
 - Credits
 - License
@@ -25,16 +24,30 @@ As a purchaser on the website I want the ability to pay with a credit card, so t
 
 
 - The motivation for this project was to create a website where users can access a variety of tools to aid in feeling good and support their wellness. 
-- On this website a user can access sounds, videos, reading articles, see randomly generated positive messages, partake in an informational quiz and post a positive message to the positivity board. The idea was to create a space users could visit to access a variety of tools all on one webpage, ie. music, videos, reading articles, etc. rather than websites which only provide one tool, ie. music. This is what sets this 
+
+- On this website a user can access sounds, videos, reading articles, see randomly generated positive messages, partake in an informational quiz and post a positive message to the positivity board. The idea was to create a space users could visit to access a variety of tools all on one webpage, ie. music, videos, reading articles, etc. rather than websites which only provide one tool, ie. music. 
+
+- What sets this website apart from others is having all these tools accessiable to the user in one space rather than having to visit multiple websites, while also solving this problem. We also have unique tools which are not available on other websites, ie. the positivity board.
+
 - The target audience for this website is anyone interested in promoting wellness, positivity and happiness in their life. 
-- To create this website HTML, CSS, JavaScript, Google Fonts, APIS were utilized. Spotify and API's were specifically used. 
+
+- To create this website HTML, CSS, JavaScript, Google Fonts and APIS were utilized. Spotify and API's were specifically used. 
+
 - A number of challenges were faced while making this project. Managing the GitHub repository while following best practices was one of the initial issues faced and continued throughout the project. Creating branches, merging branches and completing pull requests caused some errors. 
-- Challeneges were faced when implementing JavaScript in order to obtain user interactivity. Implementing functions was at times difficult and a group effort.  
+
+- Challeneges were faced when implementing JavaScript in order to obtain user interactivity. Implementing functions was at times difficult and a group effort. 
+
 - Challenges were also faced when implementing media queries to accomodate various screen sizes, especially smaller screens, ie. tablets and phones. 
-- Upon implementing the Spotify API we realized that only 30 second clips were available. For future development we would like to improve upon this API functionality so that the user is able to access complete songs.
+
+- Upon implementing the Spotify API we realized that only 29 second clips were available. For future development we would like to improve upon this API functionality so that the user is able to access complete songs.
+
 - We would also like to implement the YouTube API in the future so that when users visit the video page they can search videos through the API rather than just seeing video thumbnails.
+
+- In the future, we would also like to implement an API that provides the user access to search reading articles on the information page. 
+
 - In the making of this project group members learned a number of things. We gained a better understanding of repository maintenance, for example, working off of different branches, merging conflicts and resolving them. It also gave the members exposure to work environments where these processes are expected. 
-- Group members also improved their coding skills while learning from each other. 
+
+- Group members also improved their coding skills while learning from each other and see other coding styles. 
 
 # Usage
 
@@ -43,11 +56,35 @@ As a purchaser on the website I want the ability to pay with a credit card, so t
 - No authentications are needed to access the website.
 
 - Once on the website users will be brought to the home page where they will see random quotes being generated every 10 seconds. They can then click the explore button to be brought to the main page.
-- Once on the main page users have a choice of which page they would like to choose next. The sounds page offers 30 second 
 
-- 
+- Once on the main page users have a choice of which page they would like to choose next. 
 
-- [x][y]
+- On the quiz page the user can opt to answer self-assessment questions or not and they will be brought to a page which uses an API to randomly generate quotes. 
+
+- The sounds page offers a drop down menu where the user can select a sound from nine choices. They will then be given seven options to choose from which are 29 seconds in length. 
+
+- On the videos pages users will see seven videos which offer sounds and visually appealing images and/or information on specific topics. 
+
+- On the information page the user will see links they can click to reading articles on an outside website. Here they can read and learn about various topics in much more depth.  
+
+- On the positivity board the user can leave a message for others to see which then gets posted to the page. 
+
+- On the about us and Contact page the user will see blurbs about each developer and their contact information.
+
+
+- ![Screenshot of the main page open in browser](./images/screenshot-1.png)
+
+- ![Screenshot of the home page open in browser](./images/screenshot-2.png)
+
+- ![Screenshot of the main page open in browser]()
+
+- ![Screenshot of the main page open in browser]()
+
+- ![Screenshot of the main page open in browser]()
+
+- ![Screenshot of the main page open in browser]()
+
+- [x](y)
 
 # Credits
 
