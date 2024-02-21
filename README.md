@@ -67,13 +67,17 @@ Harmoney-Hub: A feel-good wellness application!
 
 - ![Screenshot of the main page open in browser](./images/screenshot-2.png)
 
-- ![Screenshot of the main page open in browser]()
+- ![Screenshot of the quiz page open in browser at start of the quiz](./images/screenshot-3.png)
 
-- ![Screenshot of the main page open in browser]()
+- ![Screenshot of the quiz page open in browser after going through quiz questions and receiving a randomly generated quote](./images/screenshot-4.png)
 
-- ![Screenshot of the main page open in browser]()
+- ![Screenshot of the quiz page open in browser](./images/screenshot-5.png)
 
-- ![Screenshot of the main page open in browser]()
+- ![Screenshot of the sounds page open in browser]()
+
+- ![Screenshot of the videos page open in browser]()
+
+- ![Screenshot of the information board page page open in browser]()
 
 - ![Screenshot of the positivity page open in browser](./images/screenshot-6.png)
 
