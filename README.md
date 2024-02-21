@@ -63,9 +63,9 @@ Harmoney-Hub: A feel-good wellness application!
 - On the about us and Contact page the user will see blurbs about each developer and their contact information.
 
 
-- ![Screenshot of the main page open in browser](./images/screenshot-1.png)
+- ![Screenshot of the home page open in browser](./images/screenshot-1.png)
 
-- ![Screenshot of the home page open in browser](./images/screenshot-2.png)
+- ![Screenshot of the main page open in browser](./images/screenshot-2.png)
 
 - ![Screenshot of the main page open in browser]()
 
@@ -77,6 +77,8 @@ Harmoney-Hub: A feel-good wellness application!
 
 - ![Screenshot of the positivity page open in browser](./images/screenshot-6.png)
 
+- ![Screenshot of the main page open in browser](./images/screenshot-7.png)
+
 - ![Screenshot of the main page open in browser]()
 
 - [x][y]
@@ -84,6 +86,8 @@ Harmoney-Hub: A feel-good wellness application!
 # Credits
 
 Al, Q. (2017). Body of Water and Seashore [Photograph]. Unsplash. https://unsplash.com/photos/body-of-water-and-seashore-JFeOy62yjXk
+
+Create a Mobile Toggle Navigation Menu Using HTML, CSS and JavaScript. (2023, May 22). Geeks for Geeks. Retrieved February 20, 2024, from https://www.geeksforgeeks.org/create-a-mobile-toggle-navigation-menu-using-html-css-and-javascript/?ref=header_search
 
 Fitzgerald, A. (2022, June 17). How to Make an HTML Text Box [Examples]. Hubspot. https://blog.hubspot.com/website/html-text-box
 

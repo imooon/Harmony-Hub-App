@@ -156,7 +156,11 @@ footer {
 
 /* Media query added to accomodate different screen sizes */
 @media screen and (max-width: 992px) {
-    header,
+    header {
+        margin-top: 0;
+        margin-left: 0;
+    }
+
     main,
     h2 {
       flex-direction: column;
@@ -177,11 +181,6 @@ footer {
       margin-left: 10px;
     }
 
-    /* h2 {
-        font-size: medium; 
-        width: 90%;
-        } */
-
     button {
         font-size: 1em;
     } 
@@ -193,14 +192,17 @@ footer {
 
 @media screen and (max-width: 768px) {
     header {
+      /* position: fixed; */
       flex-direction: column;
+      margin-top: 0;
+      margin-left: 0;
     }
-    main {
+    /* main {
       flex-direction: column;
       font-size: smaller;
       width: 100%;
       padding: 10px;
-    }
+    } */
   
     section {
       padding-right: 0;
@@ -208,15 +210,15 @@ footer {
       width: 100%;
       text-align: center;
       padding: 10;
-      padding-top: 10px;
+      padding-top: 12px;
     }
 
     h2 {
-        /* font-size: smaller; */
+        /* font-size: smaller;*/
         width: 90%;
         padding: 10px;
         padding-top: 10px;
-    }
+    } 
 
     button {
         font-size: 1em;
@@ -235,6 +237,7 @@ footer {
     header {
         flex-direction: column;
     }
+
     main {
       flex-direction: column;
       font-size: smaller;
@@ -256,8 +259,7 @@ footer {
       flex-direction: column;
       width: 100%;
       margin-top: 10px;
-        margin-left: 10px;
-    /* margin-bottom: 20px; */
+      margin-left: 10px;
     }
 
     button {
