@@ -59,17 +59,18 @@ main {
     flex-wrap: wrap;
     padding: 10%;
     padding-left: 10%;
+    padding-top: 7%;
 }
 
 section {
     flex: 1 1 0;
     padding-right: 5%;
-    padding-top: 10px;
+    padding-top: 8px;
 } 
 
 h2 {
     margin: 4% 0;
-    padding-top: 1%;
+    padding-top: 3%;
     display: flex;
     flex: 1 1 0;
 }
@@ -80,7 +81,7 @@ p {
 }
 
 label {
-  border-radius: 18px;
+  /* border-radius: 18px; */
 }
 
 #savedData {
@@ -115,10 +116,10 @@ button {
       rgba(60, 64, 67, 0.15) 0 2px 4px 3px;
     margin: 30px 20px;
     padding: 20px;
-    width: 30vw; 
-    height: 20vw;
+    width: 25vw; 
+    height: 10vw;
     margin-left: 60%;
-    margin-top: -40%;
+    margin-top: -25%;
 }
   
 .card::after {
@@ -127,6 +128,7 @@ button {
     clear: both;
 }  
 
+/* Saved positive message text */
 .positive-message {
     text-align: center;
     margin-top: -3px;
@@ -157,8 +159,8 @@ footer {
 /* Media query added to accomodate different screen sizes */
 @media screen and (max-width: 992px) {
     header {
-        margin-top: 0;
-        margin-left: 0;
+      margin-top: 0;
+      margin-left: 0;
     }
 
     main,
@@ -167,6 +169,7 @@ footer {
       width: 100%;
       margin-top: 10px;
       margin-left: 10px;
+      max-width: 100%;
     }
   
     section {
@@ -174,35 +177,37 @@ footer {
       margin-top: 30%;
       width: 100%;
       text-align: center;
+      max-width: 100%;
     }
 
     .card {
       margin-top: 10px;
       margin-left: 10px;
+      max-width: 100%;
     }
 
     button {
-        font-size: 1em;
+      font-size: 1em;
     } 
     
     .card {
-        flex-direction: column;
+      flex-direction: column;
     }
 }
 
 @media screen and (max-width: 768px) {
     header {
-      /* position: fixed; */
       flex-direction: column;
       margin-top: 0;
       margin-left: 0;
     }
-    /* main {
+    main {
       flex-direction: column;
       font-size: smaller;
       width: 100%;
       padding: 10px;
-    } */
+      max-width: 100%;
+    } 
   
     section {
       padding-right: 0;
@@ -211,37 +216,40 @@ footer {
       text-align: center;
       padding: 10;
       padding-top: 12px;
+      max-width: 100%;
     }
 
     h2 {
-        /* font-size: smaller;*/
-        width: 90%;
-        padding: 10px;
-        padding-top: 10px;
+      width: 90%;
+      padding: 10px;
+      padding-top: 10px;
+      max-width: 100%;
     } 
 
     button {
-        font-size: 1em;
+      font-size: 1em;
     } 
 
     .card {
-        flex-direction: column;
-        padding: 10px;
-        margin-top: 10px;
-        margin-left: 10px;
+      flex-direction: column;
+      padding: 10px;
+      margin-top: 10px;
+      margin-left: 10px;
+      max-width: 100%;
     }
 
 }
 
 @media screen and (max-width: 576px) {
     header {
-        flex-direction: column;
+      flex-direction: column;
     }
 
     main {
       flex-direction: column;
       font-size: smaller;
       width: 100%;
+      max-width: 100%;
       
     }
   
@@ -251,7 +259,8 @@ footer {
       width: 100%;
       text-align: center;
       margin-top: 10px;
-        margin-left: 10px;
+      margin-left: 10px;
+      max-width: 100%;
     }
     
     h2 {
@@ -260,23 +269,23 @@ footer {
       width: 100%;
       margin-top: 10px;
       margin-left: 10px;
+      max-width: 100%;
     }
 
     button {
-        font-size: 1em;
-        flex-direction: row;
-        width: 100%;
-        /* margin-bottom: 20px; */
+      font-size: 1em;
+      flex-direction: row;
+      width: 100%;
     } 
 
     .card {
-        flex-direction: row;
-        width: 100%;
-        /* margin-bottom: 20px; */
+      flex-direction: row;
+      width: 100%;
+      max-width: 100%;
     }
 
     footer {
-        font-size: medium;
+      font-size: medium;
     }
 }
 
