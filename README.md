@@ -62,24 +62,27 @@ Harmoney-Hub: A feel-good wellness application!
 
 - On the about us and Contact page the user will see blurbs about each developer and their contact information.
 
-
 - ![Screenshot of the home page open in browser](./images/screenshot-1.png)
 
 - ![Screenshot of the main page open in browser](./images/screenshot-2.png)
 
-- ![Screenshot of the main page open in browser]()
+- ![Screenshot of the quiz page open in browser at start of the quiz](./images/screenshot-3.png)
 
-- ![Screenshot of the main page open in browser]()
+- ![Screenshot of the quiz page open in browser after going through quiz questions and receiving a randomly generated quote](./images/screenshot-4.png)
 
-- ![Screenshot of the main page open in browser]()
+- ![Screenshot of the quiz page open in browser after searching for more advice](./images/screenshot-5.png)
 
-- ![Screenshot of the main page open in browser]()
+- ![Screenshot of the sounds page open in browser]()
 
-- ![Screenshot of the positivity page open in browser](./images/screenshot-6.png)
+- ![Screenshot of the videos page open in browser]()
 
-- ![Screenshot of the main page open in browser](./images/screenshot-7.png)
+- ![Screenshot of the information board page page open in browser]()
 
-- ![Screenshot of the main page open in browser]()
+- ![Screenshot of the positivity board page open in browser](./images/screenshot-6.png)
+
+- ![Screenshot of the positivity board page open in browser with saved positive message](./images/screenshot-7.png)
+
+- ![Screenshot of the about/contact us page open in browser]()
 
 - [x][y]
 
