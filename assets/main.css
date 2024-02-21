@@ -8,31 +8,34 @@ body{
     background-color:bisque;
     background-image:url("../images/balance-110850_1280.jpg");
     background-size:cover;
-    position:fixed;
+   
+    flex-direction: column;
+    
+    
 }
 
-.Menu{
+.Menue{
     display:inline-grid;
     font-size:3em;
     font-family: comic;
     margin-top:5%;
-    
-    
 
 }
 
 #soundBtn{
     font-family: comic;
-    font-size:60px;
+    font-size:50px;
     background-color: black;
     color:white;
     margin-bottom:80px;
     border-radius:15%;
+ padding:0px;
+   
 }
 
 #videoBtn{
     font-family: comic;
-    font-size:60px;
+    font-size:50px;
     background-color: black;
     color:white;
     margin-bottom:80px;
@@ -41,7 +44,7 @@ body{
 
 #quizBtn{
     font-family: comic;
-    font-size:60px;
+    font-size:50px;
     background-color: black;
     color:white;
     margin-bottom:80px;
@@ -59,7 +62,7 @@ body{
 
 #positiveBtn{
     font-family: comic;
-    font-size:60px;
+    font-size:50px;
     background-color: black;
     color:white;
     margin-bottom:30%;
@@ -75,9 +78,8 @@ h3{
 
 .contact{
     font-size:40px;
-   position:fixed;
-   right:12%;
-   bottom:15%;
+  
+  
    color:rgb(153, 92, 92);
    background: linear-gradient(50deg, rgb(212, 162, 101) 100% , rgb(78, 73, 3) 100%);
    cursor:pointer;
@@ -86,11 +88,81 @@ h3{
 
 .about{
     font-size:40px;
-    position:fixed;
-    right:4%;
-    bottom:4%;
+    
+    
     color:rgb(153, 92, 92);
     background: linear-gradient(50deg, rgb(212, 162, 101) 100% , rgb(78, 73, 3) 100%);
     cursor:pointer;
     border-radius:8px;
+}
+
+.disclaimer{
+    position:relative;
+  left:3%;
+}
+
+
+
+@media screen and (max-width: 414px){
+
+
+.soundBtn{
+    font-size:20px;
+}
+
+.menue{
+    font-size:25px;
+}
+}
+    
+
+
+
+@media screen and (max-width: 576px) {
+  
+    
+    .menue{
+        font-size:20px;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    
+    
+    .menue{
+        font-size:10px;
+    }
+    .soundBtn{
+        font-size:5px;
+    }
+    .disclaimer{
+        font-size:15px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    
+    
+    .menue{
+        font-size:20px;
+    }
+
+.disclaimer{
+    font-size:10px;
+}
+
+}
+
+@media screen and (max-width: 992px) {
+   
+    
+    .menue{
+        font-size:20px;
+    }
+
+.disclaimer{
+    font-size:17px;
+
+}
 }

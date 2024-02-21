@@ -14,6 +14,8 @@ body{
     background-color:bisque;
     background-image:url("../images/balance-110850_1280.jpg");
     background-size:cover;
+    
+    
 }
 
 #quote{
@@ -37,4 +39,64 @@ body{
     cursor:pointer;
     position:fixed;
     border-radius:10px
+}
+
+
+/*media query for each screen size*/
+
+
+@media screen and (max-width: 414px){
+body{
+    width:fit-content;
+
+}
+
+    
+}
+
+
+@media screen and (max-width: 576px) {
+    body{
+        width:fit-content;
+
+    }
+    h3{
+        font-size:50px;
+
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    body{
+        width:fit-content;
+
+    }
+    h3{
+        font-size:50px;
+
+    }
+}
+
+@media screen and (max-width: 320px) {
+    body{
+        width:fit-content;
+
+    }
+    h3{
+        font-size:50px;
+
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    body{
+        width:fit-content;
+
+    }
+    h3{
+        font-size:50px;
+
+    }
 }

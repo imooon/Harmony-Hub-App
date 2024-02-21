@@ -1,3 +1,11 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+
+
 body {
     background-image: url(../images/sunset.jpg);
     background-repeat: no-repeat;
@@ -11,29 +19,26 @@ body {
 }
   
 header {
-    
-    left: 0;
-    top: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1%;
-    color: black;
+  
+ margin-top:-1%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 3px;
+  background-color: rgb(246, 209, 96);
+  color: black;
+  
+  
 }
+
   
 h1 {
     font-size: 200%;
 }
 
-nav ul {
-    display: flex;
-    justify-content: space-between;
-    min-width: 300px;
-    list-style-type: none;
-    padding: 10px;
-    margin: 10px;
-}
+
+
 
 nav a {
     color: black; 
@@ -43,10 +48,7 @@ nav a {
     
 }
 
-/* 20px of spacing between list items */
-nav li {
-    margin-right: 20px;
-}
+
 
 main {
     display: flex;
@@ -90,6 +92,7 @@ footer {
     max-width:800px;
     margin:20px auto;
     padding:20px;
+   
 }
 
 label{
@@ -97,7 +100,9 @@ label{
     margin-right:10px;
 }
 
-
+#selectOptions{
+  margin-bottom:20px;
+}
 
 
 #result{
@@ -110,116 +115,233 @@ label{
 text-align:center;
 }
 
-
-.album img{
-width:100%;
-border-radius: 8px;
+audio {
+  width: 300px;
+  height: 54px;
 }
 
-.album h2{
-    margin-top:10px;
-    margin-bottom:5px;
-    font-size:18px;
+.track-audio {
+    width: 100%; 
+    margin-top: 10px; 
 }
 
-.album p {
-    color:black;
-    font-size:15px;
-}
-
-@media screen and (max-width: 768px) {
-    header,
-    main {
-        flex-direction: column;
-          
-        width: 50%;
-    }
+.picture img{
+    font-size:6px;
   
-    section {
-        flex-direction: column;
-          
-        width: 100%;
+}
+
+
+#menu-toggle {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 28px; 
+  color: #000; 
+}
+
+#menu {
+  display: none; 
+  list-style:none; 
+  padding: 0;
+  margin: 0;
+}
+
+#menu ul {
+  display:grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 10px; /* Adjust the gap between items */
+  list-style:none; 
+}
+
+#menu li {
+  text-align: center;
+ 
+}
+
+/* Default styles for larger screens (992px and above) */
+@media only screen and (min-width: 992px) {
+    header {
+        padding: 20px;
+    }
+    body {
+      font-size: 16px; 
+      padding: 20px; 
+    }
+    audio {
+      width: 450px;
+      height: 120px;
     }
 
-    footer{
-        flex-direction: column;
-          
-        width: 100%;
+button {
+    font-size: 16px;
+    padding: 10px 20px; 
+  }
+    .playList {
+      width: 80%;
+      margin: 0 auto; 
     }
 
-    .playlist{
-        flex-direction: column;
-          
-        width: 100%;
-      }
+    .picture img {
+       
+        width: 90%; 
+        height: auto;
     }
-
-    
-  
-    @media screen and (max-width: 576px) {
-        header,
-        main {
-          flex-direction: column;
-          
-          width: 50%;
-        }
+    .track-audio {
+        
+        width: 80%;
+    }
+    p{
       
-        section {
-            flex-direction: column;
-          width: 50%;
-          text-align: center;
-        }
-    
-        footer{
-            flex-direction: column;
-          
-          width: 50%;
-        }
-    
-        .playlist{
-            flex-direction: column;
-          
-          width: 100%;
-          }
+    }
+}
+  
+  
+  /* Styles for medium-sized screens (768px to 991px) */
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    body {
+      font-size: 14px; 
+      padding: 15px; 
+    }
+  
+    .playList {
+      width: 90%; 
+      margin: 0 auto; 
+    }
+  
+    audio {
+      width: 350px;
+      height: 85px;
+    }
 
-          label{
-            flex-direction: column;
-          
-            width: 100%;
-          }
-        }
+  header {
+    padding: 15px; 
+  }
+  .picture img {
+   
+    width: 90%;
+    height: auto; 
+  }
+  .track-audio {
     
-        @media screen and (max-width: 992px) {
-            header,
-            main {
-                flex-direction: column;
-                  
-                width: 100%;
-            }
-          
-            section {
-                flex-direction: column;
-                  
-                width: 50%;
-            }
-        
-            footer{
-                flex-direction: column;
-                  
-                width: 100%;
-            }
-        
-            .playlist{
-                flex-direction: column;
-                  
-                width:100%;
-           
-              }
+    width: 70%;
+  }
 
-              label{
-                flex-direction: column;
-                
-                width: 50%;
-              }
-            }
+  button {
+    font-size: 14px; 
+  }
+  }
+  
+  /* Styles for smaller screens (576px to 767px) */
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+        header {
+          padding: 10px; 
+      
+        button {
+          font-size: 12px; 
+          padding: 6px 12px; 
+        }
+      }
+      .picture img {
         
+        width: 70%; 
+        height: auto; 
+      }
+
+      audio {
+        width: 300px;
+        height: 70px;
+      }
+    
+    body {
+      font-size: 12px; 
+      padding: 10px; 
+    }
+    .track-audio {
+       
+        width: 60%; 
+    }
+    .playList {
+      width: 95%; 
+      margin: 0 auto; 
+    }
+  }
+  
+  /* Styles for extra small screens (575px and below) */
+  @media only screen and (max-width: 575px) {
+    body {
+      font-size: 20px; 
+      padding: 5px; 
+    }
+  
+    .playList {
+      width: 100%; 
+      margin: 0; 
+    }
+    header {
+        padding: 1px; 
+      }
+      .track-audio {
+        
+        width: 30%; 
+      }
+    
+      button {
+        font-size: 10px; 
+      }
+      .picture img {
+        
+        width: 50%; 
+        height: auto; 
+    }
+    audio {
+      width: 250px;
+      height: 50px;
+    }
+}
+    
+  
+  
+  /* Styles for very small screens such as phones (320px and below) */
+  @media only screen and (max-width: 320px) {
+   
+    body {
+        
+      font-size: 10px; 
+      padding: 2px;
+    } 
+
+    .playList {
+      width: 100%; 
+      margin: 0; 
+    }
+    .track-audio {
+        
+        width: 70%;
+    }
+    button {
+        font-size: 8px; 
+        padding: 2px 4px; 
+      }
+
+      .picture img {
+        
+        width: 90%; 
+        height: auto;
+    }
+  h1 {
+      font-size: 20px; 
+  }
+
+   nav ul{
+      margin-top: 15px;
+  }
+
+ nav li {
+      margin-right: 5px; 
+  }
+  audio {
+    width: 180px;
+    height: 30px;
+  }
+
+}
